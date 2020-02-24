@@ -142,3 +142,6 @@ cmake-build-*/
 iOSInjectionProject/
 
 app/.idea/ 
+.idea/
+
+.DS_Store

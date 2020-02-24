@@ -1,0 +1,2034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00AE682611A6892DEED6FBC0 /* CarEditFormPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B985738D5F3C914C29DACE1A /* CarEditFormPresenter.swift */; };
+		045D15BC9E86725068C895F6 /* FastTrackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26FD4739378DA6A463A448 /* FastTrackPresenter.swift */; };
+		0589AFD2459FFD794B829390 /* NotificationsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01F09100595212853060DCD /* NotificationsViewOutput.swift */; };
+		061EFAE7A8477BF4B2B42384 /* LoginSelectionModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49DF7E4D15D9EA84331F24F /* LoginSelectionModuleInput.swift */; };
+		09DBDFEAD67930589BA8D747 /* CreateUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DC2256B88F7367629871B0 /* CreateUserViewController.swift */; };
+		0A2B93057C1AB0376F68AD13 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40C45366B3E90C522DF9EE4D /* NotificationsViewController.swift */; };
+		0B56BDE6E2274B9164DA7E93 /* CarsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1F660D3E0B76484AC8EF3D /* CarsInteractorInput.swift */; };
+		0CE63EA8E925BA33F0AF6E10 /* TransactionDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6067A0F6FEB6916D7CCE37DF /* TransactionDetailViewInput.swift */; };
+		0D336658F476CD5A2379A037 /* FastTrackInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8277A7D82FBF1CDD47A59C /* FastTrackInteractorInput.swift */; };
+		0E8DDB2C5E43C30F0F2102EA /* TransactionDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98236554B78929C5605D9C0B /* TransactionDetailInteractorOutput.swift */; };
+		0EAA54D6AA0E0F16089A3935 /* TabbedNavigationViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620892C0C2BF0B8D4485A082 /* TabbedNavigationViewOutput.swift */; };
+		0F085D3A73D9C72E95562209 /* EditProfileViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAC707C36F342E2196F2E5F /* EditProfileViewOutput.swift */; };
+		115E7A10A09EC9F1EB643D47 /* CarsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00241CB7B9513B4EA8DB75DE /* CarsInteractor.swift */; };
+		12E4066C91BBCD408391F232 /* TabbedNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F794C66A245A8E905E23C88F /* TabbedNavigationPresenter.swift */; };
+		14E352A33806E19FE79E4EA2 /* DashboardInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1253118C75FBE4F9B39C78A1 /* DashboardInteractorInput.swift */; };
+		166226A3FCB2494E70EBEF81 /* CreateUserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F58207CFD7B5D66849AC33 /* CreateUserInteractor.swift */; };
+		16F2A56DF6AE7AB0BAA7A122 /* ServicesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF82E0FCF4737DEB85E20B5 /* ServicesPresenter.swift */; };
+		17A077243AF3A5971E63C8A1 /* NotificationsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BFD04CABCB0919F5681219 /* NotificationsModuleInput.swift */; };
+		17C4064E3E0CFB9ED8FA2F38 /* AddCreditCardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA178CC5B1297BE18721057 /* AddCreditCardRouter.swift */; };
+		18BC411D8A7332CDA7D66153 /* SigninWithEmailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CBCB6D974ED6D6C32039D6 /* SigninWithEmailViewOutput.swift */; };
+		19649E37AE21BF5B27FED2CD /* AddCreditCardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF1BA090481B60A51D80E48 /* AddCreditCardInteractor.swift */; };
+		1AB9E9B4E07D159E176A606A /* CarsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7699B4447223DF71A6B3F8E0 /* CarsPresenter.swift */; };
+		1BDEF199AAC8C8B724F3BF97 /* DashboardRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174324324E49291BDFB5FDA3 /* DashboardRouterInput.swift */; };
+		1C57362ECE19E2980B89BFFE /* CreditCardsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE228A7006200CA3CF29E56 /* CreditCardsPresenter.swift */; };
+		1FC0BCA6FFEB2BCEC3F75B44 /* DashboardViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453A0D561E668771212AC131 /* DashboardViewOutput.swift */; };
+		2128327C14879D08369C474E /* CreditCardsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC59CCB94FDD215C3E6DB42 /* CreditCardsInteractorInput.swift */; };
+		2280CAACF191E91053D940A1 /* CreditCardsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9E7019F47E638A97DEAAA /* CreditCardsInteractorOutput.swift */; };
+		267BBD7EEDF33133D70008EC /* NotificationsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18078EA5CE68C0422B4B860E /* NotificationsPresenter.swift */; };
+		270E7ECF60A16A30B50A975F /* CarsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A1F66D4FFDDBD9D3387EA6 /* CarsInteractorOutput.swift */; };
+		28C658594EC4EF4F5BD11DB2 /* LoginSelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B350933E9FABDA72861B61 /* LoginSelectionRouter.swift */; };
+		2A0F2373A68840BF3ACB7CF4 /* TabbedNavigationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1850EB3608B99CA718E99318 /* TabbedNavigationInteractor.swift */; };
+		2B3F9B90B476C2931EC0CA38 /* LoginSelectionInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655934EB182BA90FAC859D87 /* LoginSelectionInteractorInput.swift */; };
+		2B97605744272A2DB2C90BF1 /* FastTrackInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBD0A967ED434B206C4FFD8 /* FastTrackInteractor.swift */; };
+		2D396E2007EE18E1FC33CA94 /* ServicesViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A092D7DD7B276F2E528A73 /* ServicesViewOutput.swift */; };
+		2FD91EA1D51149C7C770692F /* TermsAndConditionsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D05D4640253DD332651C40 /* TermsAndConditionsModuleInput.swift */; };
+		3345811173D06A161723A57A /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29CEF7AB43233256670DF16 /* SettingsViewInput.swift */; };
+		3B1E84DF238D80DE008E3437 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E84DE238D80DE008E3437 /* SplashViewController.swift */; };
+		3B1E84E3238E31EB008E3437 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3B1E84E2238E31EB008E3437 /* README.md */; };
+		3B1E84E5238E42D8008E3437 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E84E4238E42D8008E3437 /* TabView.swift */; };
+		3B1E84E7238EBD08008E3437 /* Notch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E84E6238EBD08008E3437 /* Notch.swift */; };
+		3B1E84E9238ECCDD008E3437 /* RunOnDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1E84E8238ECCDD008E3437 /* RunOnDevice.swift */; };
+		3B21D0DB23C0D403005B4552 /* DateFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B21D0DA23C0D403005B4552 /* DateFormatting.swift */; };
+		3B2C28632382DBDF00983ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2C28622382DBDF00983ECE /* AppDelegate.swift */; };
+		3B2C28652382DBDF00983ECE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2C28642382DBDF00983ECE /* SceneDelegate.swift */; };
+		3B2C286C2382DBE100983ECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2C286B2382DBE100983ECE /* Assets.xcassets */; };
+		3B2C289E2382F11B00983ECE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2C289D2382F11B00983ECE /* LoginButton.swift */; };
+		3B390CDA23C0F09000F34DD9 /* CreditCardFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B390CD923C0F09000F34DD9 /* CreditCardFormatter.swift */; };
+		3B390CDE23C2577100F34DD9 /* FastTrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B390CDD23C2577100F34DD9 /* FastTrackModel.swift */; };
+		3B390CE023C257EB00F34DD9 /* FastTrackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B390CDF23C257EB00F34DD9 /* FastTrackRepository.swift */; };
+		3B390CE223C2836300F34DD9 /* ServiceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B390CE123C2836300F34DD9 /* ServiceModel.swift */; };
+		3B390CE423C2839500F34DD9 /* ServicesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B390CE323C2839500F34DD9 /* ServicesRepository.swift */; };
+		3B4CA1C32FA4B3B37F118DB5 /* CreditCardsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCCF40CA004E6F91B12ECAD /* CreditCardsViewInput.swift */; };
+		3B5BBAAE23AF4FEC0061F9FA /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BBAAD23AF4FEC0061F9FA /* RoundedImage.swift */; };
+		3B73513223AF56C100AD0C9A /* VersionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B73513123AF56C100AD0C9A /* VersionInfo.swift */; };
+		3B73513423AF5C5A00AD0C9A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B73513323AF5C5A00AD0C9A /* Theme.swift */; };
+		3B7897EF2384732000C658BA /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7897EE2384732000C658BA /* DataRepository.swift */; };
+		3B7897F12384734A00C658BA /* DataRepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7897F02384734A00C658BA /* DataRepositoryFactory.swift */; };
+		3B7897F32384762B00C658BA /* DataRepositoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7897F22384762B00C658BA /* DataRepositoryRequest.swift */; };
+		3B7898002384A26C00C658BA /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7897FF2384A26C00C658BA /* UserRepository.swift */; };
+		3B7898062389400000C658BA /* AppCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7898052389400000C658BA /* AppCordinator.swift */; };
+		3B7898082389486A00C658BA /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7898072389486A00C658BA /* Launch Screen.storyboard */; };
+		3B78980C2389492C00C658BA /* SplashStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B78980B2389492C00C658BA /* SplashStoryboard.storyboard */; };
+		3B7898112389AA7A00C658BA /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7898102389AA7A00C658BA /* SessionManager.swift */; };
+		3BAF53F523831C8C00BADEAC /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF53F423831C8C00BADEAC /* UserModel.swift */; };
+		3BBD246523C5169900DA74F4 /* PushTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD246423C5169900DA74F4 /* PushTokenRepository.swift */; };
+		3BBD246723C517BC00DA74F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BBD246623C517BC00DA74F4 /* GoogleService-Info.plist */; };
+		3BBD246923C51BB300DA74F4 /* PushCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBD246823C51BB300DA74F4 /* PushCordinator.swift */; };
+		3BD0A2BE238B1A1300F91604 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD0A2BD238B1A1300F91604 /* ApiError.swift */; };
+		3BDAA83B2389B16200987283 /* ErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA83A2389B16200987283 /* ErrorHelper.swift */; };
+		3BDAA83D2389D3BF00987283 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA83C2389D3BF00987283 /* HexColor.swift */; };
+		3BDAA83F2389DBE000987283 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA83E2389DBE000987283 /* Localization.swift */; };
+		3BDAA841238A67C600987283 /* BigWhiteTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA840238A67C600987283 /* BigWhiteTextField.swift */; };
+		3BDAA843238A6B6300987283 /* TermsTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA842238A6B6300987283 /* TermsTextView.swift */; };
+		3BDAA845238A736500987283 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA844238A736500987283 /* RoundedButton.swift */; };
+		3BDAA848238A8C2900987283 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BDAA847238A8C2900987283 /* AuthenticationServices.framework */; };
+		3BDAA84A238AD0B900987283 /* AnalyticsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA849238AD0B900987283 /* AnalyticsRepository.swift */; };
+		3BDAA84C238AD20500987283 /* VoidModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDAA84B238AD20500987283 /* VoidModel.swift */; };
+		3BEAC7E123C0B3850044CD76 /* CreditCardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7E023C0B3850044CD76 /* CreditCardModel.swift */; };
+		3BEAC7E323C0B3980044CD76 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7E223C0B3980044CD76 /* CarModel.swift */; };
+		3BEAC7E523C0B45D0044CD76 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7E423C0B45D0044CD76 /* NotificationModel.swift */; };
+		3BEAC7E723C0B4B70044CD76 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7E623C0B4B70044CD76 /* TransactionModel.swift */; };
+		3BEAC7E923C0B5AF0044CD76 /* TransactionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7E823C0B5AF0044CD76 /* TransactionRepository.swift */; };
+		3BEAC7EB23C0B5B70044CD76 /* CarRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7EA23C0B5B70044CD76 /* CarRepository.swift */; };
+		3BEAC7ED23C0B5CB0044CD76 /* CreditCardRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7EC23C0B5CB0044CD76 /* CreditCardRepository.swift */; };
+		3BEAC7EF23C0B5DA0044CD76 /* NotificationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7EE23C0B5DA0044CD76 /* NotificationRepository.swift */; };
+		3BEAC7F123C0C9D40044CD76 /* AmountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEAC7F023C0C9D40044CD76 /* AmountFormatter.swift */; };
+		3C1FC6482BDA4C820CF25D31 /* CarsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3857482C66215B1B480A45D /* CarsRouter.swift */; };
+		3E4BDA99CAB19E8F20366062 /* HelpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A0DEBD3940DBB0F6CD6871 /* HelpPresenter.swift */; };
+		40ABC119C86B30BEE1C510E0 /* SigninWithEmailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D28725B0009497C41183F7 /* SigninWithEmailViewInput.swift */; };
+		410AED6A8ACE26E3BC2331FC /* HelpInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF55A059F2B1FBE5C3FF6B9 /* HelpInteractorOutput.swift */; };
+		4131F1F93FDD96C8DC6DE8E4 /* LoginSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B19AB1C6EBEDD1E0F694CBF6 /* LoginSelectionViewController.swift */; };
+		41D8F1ED3459E07D37181384 /* CreateUserViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4564FCC1D358D913F194186 /* CreateUserViewInput.swift */; };
+		42B263BD61C52CCF832444BB /* AddCreditCardRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AC7068AF98654860C3E84D3 /* AddCreditCardRouterInput.swift */; };
+		43256F19609EE9353A4BBAC5 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A6F452589D60A28E97D79 /* SettingsPresenter.swift */; };
+		4521542DE7B0906A7368BCEB /* CreateUserRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A5F3AFC07D62A320644E6D /* CreateUserRouterInput.swift */; };
+		46CECEA557F595C0FC49FF65 /* AddCreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89BD064D8D1848DBBD1F5F8 /* AddCreditCardViewController.swift */; };
+		484496BF7B8316F8880333E5 /* CreditCardsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3970115E94663C6C85E78A25 /* CreditCardsInteractor.swift */; };
+		48B8C0789E016927C016D3FF /* DashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6139326D4C51F53422506309 /* DashboardInteractor.swift */; };
+		4C94E6338C4CBF6E7F3C7919 /* TabbedNavigationRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E750B4EF8A3A14024BCFB313 /* TabbedNavigationRouterInput.swift */; };
+		4DE09B4DCBC09768F0D9E5DA /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C87D6F899D9A5825DF3C35C6 /* Pods_App.framework */; };
+		4EC2C75631E55505015E2013 /* TermsAndConditionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E539D1FA8C1E3D98D40578 /* TermsAndConditionsPresenter.swift */; };
+		4F973C340684C9400E58A85A /* CarEditFormViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CFF82222CBF85A9E3C281 /* CarEditFormViewInput.swift */; };
+		511412318B37F3B5F2A32936 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3C661C0BB0B22903EC86AE /* SettingsViewOutput.swift */; };
+		51EBDC436BFD5E20086ACB0F /* HelpInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65D0F0C98070DB5E496A785 /* HelpInteractorInput.swift */; };
+		52409B53526BAF7C56D8E7A6 /* SigninWithEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C35C5C92699B171BBAFEB98 /* SigninWithEmailPresenter.swift */; };
+		54469A4CAD0E9FF9DFAEC955 /* FastTrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64E7169D9BEE1EEA40CE882 /* FastTrackViewController.swift */; };
+		547E0322917408476313D2DC /* CreateUserModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA305B4C3BD83F668B0ADFC /* CreateUserModuleInput.swift */; };
+		570978C733E95143BD53DBB7 /* LoginSelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95373EB70B29245469DC248 /* LoginSelectionPresenter.swift */; };
+		58FCF423674EA7EAD80AB392 /* TabbedNavigationInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E429CAD5BAD0A5E99D9D50C /* TabbedNavigationInteractorOutput.swift */; };
+		5921395B3040935679D7DA92 /* ServicesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63658D290A8C029375164F4 /* ServicesInteractor.swift */; };
+		5A577BC6579DE28213D76E35 /* FastTrackRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5E8F6E768E07FECF80A959 /* FastTrackRouterInput.swift */; };
+		5BB406344F4DB20E1C67DFB6 /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E3556046B84BF481996D357 /* SettingsInteractor.swift */; };
+		5F781777ECD442EB2985556B /* ServicesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDE0AAB00D5B86063650B49 /* ServicesRouter.swift */; };
+		5FE8E978C142CE55919B3442 /* HelpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26DE02E117A2712736077B7A /* HelpInteractor.swift */; };
+		600A49AE75D943A63F470760 /* DashboardModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205EE24DF33DBBBC0569FA3 /* DashboardModuleInput.swift */; };
+		601D6C135E3A34EA24C84938 /* AddCreditCardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E445C16EC89C1DAA7C3D649 /* AddCreditCardPresenter.swift */; };
+		60443A3CADE31FA1D47769C3 /* TransactionDetailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E004476C96E8161B46FF7A /* TransactionDetailModuleInput.swift */; };
+		611BCF954CF03E9317727AB0 /* TermsAndConditionsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1625B563F5B6E30393A13E6B /* TermsAndConditionsRouterInput.swift */; };
+		626591E5A89247F3D708C19C /* FastTrackViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99C444E5B4F74B4F2494F25 /* FastTrackViewInput.swift */; };
+		6477DA8A9567FE8E2DD85C08 /* FastTrackInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39B52A08CA7B952550F808B /* FastTrackInteractorOutput.swift */; };
+		64786C075BD566814B2DF135 /* AddCreditCardInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274F95B1AC0C320C5F0746CD /* AddCreditCardInteractorOutput.swift */; };
+		64AC775DE0A96003A82C9310 /* ServicesViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8EDA2414444F8202651059 /* ServicesViewInput.swift */; };
+		66020D8FDD12F6C3BB338398 /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4E92A3E96D80A67D4F672B /* SettingsRouterInput.swift */; };
+		684A2658BF2E6B1CF76CC1BA /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6A91BA0164FDA625745C42 /* EditProfileViewController.swift */; };
+		699FBBF78F8D403C0E38FE94 /* EditProfileInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0A5021815B6FB534508C84 /* EditProfileInteractorInput.swift */; };
+		69F762BC6926C90A6819B266 /* SigninWithEmailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51957F597F4A75CC21E1473 /* SigninWithEmailInteractorOutput.swift */; };
+		6C110DE0F8BCB09D1AE4833D /* CarEditFormViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9DA7E0FFB6A0BA0871595F /* CarEditFormViewOutput.swift */; };
+		6CE7C141BF05B1CE5041056E /* FastTrackViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4360F9FDA0CE831F89022F73 /* FastTrackViewOutput.swift */; };
+		7010425765F4DD9F0BF84060 /* TransactionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225D2332E9E256C44723D4BF /* TransactionDetailViewController.swift */; };
+		70A740C7ABE722191E03F53E /* EditProfileModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70617C363168AD34ADABBBD /* EditProfileModuleInput.swift */; };
+		71D6BB8C9656951B13631685 /* TransactionDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36B35CC77B2BB663A6403F4 /* TransactionDetailInteractorInput.swift */; };
+		749E4E72DCFF43F02E4DD93A /* TransactionDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB8E902662727CF68AC770 /* TransactionDetailInteractor.swift */; };
+		754E3C2488F741BC016020B2 /* AddCreditCardViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48EDC8534F4832210699F10B /* AddCreditCardViewInput.swift */; };
+		76C8BF5518F65D8023EB3DA1 /* ServicesInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807123C5BF5BCD2E4E09870 /* ServicesInteractorOutput.swift */; };
+		77C0BDB6F62E0F61271ED0DE /* LoginSelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6498435EF799C42B5A9E65D5 /* LoginSelectionInteractor.swift */; };
+		78BD48E278E1F7D74D0692C7 /* AddCreditCardModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E6E9351D5D2490926DD317 /* AddCreditCardModuleInput.swift */; };
+		7BCE31698F45AA860956C704 /* TabbedNavigationModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA71076D94D4059ED9DF7C2 /* TabbedNavigationModuleInput.swift */; };
+		7EC75706A1299CE26BD09794 /* DashboardInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F782DB786E72BEA31B946241 /* DashboardInteractorOutput.swift */; };
+		816714BDE6AE65310C19666A /* CarsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE567CDD3E209B7DE2C672E /* CarsViewOutput.swift */; };
+		8265A36BB8590695FF2E8137 /* FastTrackRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E52C1EA01374C51AE968E7 /* FastTrackRouter.swift */; };
+		833A3F4FC32FCA90C4BAD94F /* CarEditFormInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C503F873DDFC0C267ED8BD4 /* CarEditFormInteractorInput.swift */; };
+		849E2F38AD2B8EDDC62FD69B /* TermsAndConditionsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94F815FEE6FECB914F316E0 /* TermsAndConditionsViewOutput.swift */; };
+		84B11A918EF28F03B28239E0 /* EditProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835AC2B5583FD5EB6A99D3F2 /* EditProfileRouterInput.swift */; };
+		851C8B52CAFDDE6F43AC3C18 /* DashboardRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BEBEEE4C104712FF12EDCA /* DashboardRouter.swift */; };
+		8699426E8F29E235B61B3C45 /* ServicesInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6836B9D2C85D10DD13C71D5F /* ServicesInteractorInput.swift */; };
+		893B20F1461BEF6DC2D71EF1 /* NotificationsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D2F61B630BFD9991D1FAB /* NotificationsViewInput.swift */; };
+		893BD2EAA640C64D0A720552 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB9758C933B4BE020F95535 /* DashboardViewController.swift */; };
+		89E114F17FC6151689CF9FBA /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5B66D6DDBA5C769B05F064 /* CarsViewController.swift */; };
+		8DEB51F0C2EC836E5A6B64D6 /* TermsAndConditionsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AABC7B269A1174A78984C2 /* TermsAndConditionsViewInput.swift */; };
+		8E49C64734B9E98DF9B5F3ED /* SettingsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F450E0E6998052FB179AA19 /* SettingsModuleInput.swift */; };
+		9282E71D7E8F44BD8EF5BF7F /* CreditCardsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD7643CD96DF99D059BB471 /* CreditCardsRouterInput.swift */; };
+		9766569451F0AF344F8CDFF4 /* SigninWithEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F622AE74897D531F26106D01 /* SigninWithEmailRouter.swift */; };
+		9AB731E46724FCEC597C870A /* CarEditFormInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B00D5BDB8CC5DB9F387CBDFB /* CarEditFormInteractorOutput.swift */; };
+		9AB9927C065C87EABC0AE5F2 /* HelpRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C2FBE0B86AA113FB5B961A /* HelpRouterInput.swift */; };
+		9F831DFFBCB7181EBB17A95C /* SigninWithEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A43464BC711901EB080F2B /* SigninWithEmailViewController.swift */; };
+		A109C501B93E9F93905E2C46 /* HelpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26B83409B01A73FC0F119B5 /* HelpRouter.swift */; };
+		A117A6F3D3453944D8423930 /* TabbedNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4935F4360DB56D2F02CD2721 /* TabbedNavigationViewController.swift */; };
+		A280A48C013D838925480588 /* NotificationsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352A3DBF746CE7A5B841C7F3 /* NotificationsInteractorOutput.swift */; };
+		A35EFC110D18B820EC19813C /* CreateUserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EFC01859C83A6F98CC7EF /* CreateUserRouter.swift */; };
+		A4C9E7434110DD7DF3E2C59D /* SigninWithEmailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D90ED75535478F58DDD93E /* SigninWithEmailInteractorInput.swift */; };
+		A696D0385FEAF0F8A4BC17DE /* SigninWithEmailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FEC72103B713758E31E147 /* SigninWithEmailRouterInput.swift */; };
+		A6D5FBE77D958ED0026156E4 /* TermsAndConditionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EBFD10B95C5689BDFAF504 /* TermsAndConditionsRouter.swift */; };
+		A7A10CAF0CE1DF4A6E65FC28 /* HelpModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0CA3A368DC3C07F39A861B /* HelpModuleInput.swift */; };
+		A83349B7569BAA3940B91AE8 /* TermsAndConditionsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 389A7F073DD7C9BC45B128AE /* TermsAndConditionsInteractorOutput.swift */; };
+		A83A58C15BFC69C63F895C08 /* CreateUserInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED068CA174BEEC21BD425CC /* CreateUserInteractorInput.swift */; };
+		A845BB0B7BD343011F037B86 /* CreateUserInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100734179D583B71B6EE6338 /* CreateUserInteractorOutput.swift */; };
+		AA1941A97B914D2D62420632 /* LoginSelectionRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01040FC90BA2BD41205AA85 /* LoginSelectionRouterInput.swift */; };
+		AF1418A5871E706216E06240 /* NotificationsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5A2B25F50FA0831A7E6985 /* NotificationsRouter.swift */; };
+		AF322DB8FA3DD32219A5AEB3 /* TermsAndConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F29B4FE752446961FFB8323B /* TermsAndConditionsViewController.swift */; };
+		AF4A7ACDC4A1170B62746B0B /* AddCreditCardInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F18D7A7AAE2C8027A70650 /* AddCreditCardInteractorInput.swift */; };
+		B0045EE7D49EA02909501447 /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A251B4C4C434B899C4B8B08B /* ServicesViewController.swift */; };
+		B0A2B7C9FCAEDA4E866D546E /* SigninWithEmailModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EEB9B1833346AB7F6805BD /* SigninWithEmailModuleInput.swift */; };
+		B17EBDD3869339CDA6D52351 /* CarsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B041E65ED2A3949909ECC /* CarsViewInput.swift */; };
+		B3188FCC018ADC7019E64418 /* TransactionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50982A73378C73BCAF6CCD /* TransactionDetailRouter.swift */; };
+		B32F57D789161D72CB3E234E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2B4A1CD2505599C2BCE30 /* HelpViewController.swift */; };
+		B59069C2C820720E0D50A60C /* TransactionDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D5103AF2029415EF7962A /* TransactionDetailRouterInput.swift */; };
+		B698C80FD14B17901846FE1E /* CarEditFormRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F291A57AC31444D2D6C06 /* CarEditFormRouterInput.swift */; };
+		BBB1C4C1DEB648C3D0FBE331 /* EditProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E57437E2566B5CA80D44 /* EditProfileInteractor.swift */; };
+		BC5EF9E8A81A2F17989EAB95 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2196644D0B36CEB0F44F79 /* SettingsRouter.swift */; };
+		C0523DF94B155B7AF9842E66 /* SigninWithEmailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276CB59544E1D1FA9C56DCCD /* SigninWithEmailInteractor.swift */; };
+		C2FA04D48D5624B12DCF0E18 /* ServicesModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A010E864DF5B0329E8A7C4 /* ServicesModuleInput.swift */; };
+		C7664F0A19617B42E628654F /* ServicesRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75060399EC92D8E9788934B /* ServicesRouterInput.swift */; };
+		C877E1A6C00FC137F0127D75 /* TermsAndConditionsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ABC14816D1CDD319424DA24 /* TermsAndConditionsInteractorInput.swift */; };
+		C88CC9E94883552A87111C73 /* CreateUserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8094C9AA7F7BCF32EA6985 /* CreateUserPresenter.swift */; };
+		C8A3C5641951E86A34B88A13 /* LoginSelectionInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB415062B634FD7306692B /* LoginSelectionInteractorOutput.swift */; };
+		CE0E2D1D7CCF3971B5B009B9 /* CreditCardsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CCE8B7B6CB2D90D0DA9082 /* CreditCardsModuleInput.swift */; };
+		CFDB7C8384954B8C17437F7C /* LoginSelectionViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCE397FBACD32FF9CE9D410 /* LoginSelectionViewOutput.swift */; };
+		D010FB5BCFC346E4D258A4B4 /* SettingsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91E98E1220849BEDF16E646 /* SettingsInteractorOutput.swift */; };
+		D10E7F77A026F1FC5150ABB0 /* NotificationsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB97801FE7EF236FE1A18D06 /* NotificationsRouterInput.swift */; };
+		D117FFF2DCCBA08ADEED51FB /* HelpViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FFB1B7E7A573056A29F0FD /* HelpViewOutput.swift */; };
+		D2C7642FC07163A49CC941E4 /* CarEditFormModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8E58A4E28E3C13565C0571 /* CarEditFormModuleInput.swift */; };
+		D4B9D49FC8A26579D4D7BEC6 /* TabbedNavigationInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48085366A75CAC299ECBB7E /* TabbedNavigationInteractorInput.swift */; };
+		D6600476235BFDBD94479237 /* LoginSelectionViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C00F39FC2CB7F2133C1407 /* LoginSelectionViewInput.swift */; };
+		D69C8B962218EF9591136826 /* FastTrackModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0395239D354C43559AAD6058 /* FastTrackModuleInput.swift */; };
+		D75314FC0A9E8B494B2DBE6D /* NotificationsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9105D15601F42DC296CE2065 /* NotificationsInteractor.swift */; };
+		DAC43FF7F2424422A45FEDA8 /* CreditCardsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EB31C8B165FF6965A8E35F /* CreditCardsRouter.swift */; };
+		E0DB9D4DD28B3EFD2BA75121 /* TabbedNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56078BFC66F7462CD5687A0C /* TabbedNavigationRouter.swift */; };
+		E0F5BF7E365424210D08C6F1 /* TermsAndConditionsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71C123E967215991956520A /* TermsAndConditionsInteractor.swift */; };
+		E1E254E433E233F361866AF6 /* CreateUserViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9675FEF86CA770AC4BBF4FD0 /* CreateUserViewOutput.swift */; };
+		E1E3F78CBF0B0D80A2EED32F /* EditProfileViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA3766CE8406869AC292DA1 /* EditProfileViewInput.swift */; };
+		E277BD44457F6C9FBBBF7CBD /* EditProfileInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D414818217A55B374900EA78 /* EditProfileInteractorOutput.swift */; };
+		E53F7005E7B89EC476557600 /* CarEditFormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01CF3F9669B84DB45995431D /* CarEditFormRouter.swift */; };
+		E5EB4E0AC26EC83D40DF29DE /* CreditCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9ECB780603827A59B5E964 /* CreditCardsViewController.swift */; };
+		E65787DB518E5D164A47840A /* CarEditFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C6436559C0562B8C2F92E3 /* CarEditFormViewController.swift */; };
+		E79E4BBC2AFD3125871F45A5 /* HelpViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBD668F6B8485D811DFCB66 /* HelpViewInput.swift */; };
+		EB3F1ADF9BD1DE4292F9A113 /* TransactionDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225F45B7325B2DD7A802E07A /* TransactionDetailViewOutput.swift */; };
+		ED0F2C87FA62E7B2C7293CF9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35135ED8FCA8AFFA416523D4 /* SettingsViewController.swift */; };
+		ED6CD6FB1BC2A110C7B21DEF /* CarsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457627540C62FF5C23B2663 /* CarsModuleInput.swift */; };
+		EE55144D2E1F422CFA877795 /* EditProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC6508F8C0D0967A650571A /* EditProfilePresenter.swift */; };
+		F03575F22AD39E138D98B6AC /* SettingsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761259D8DB7AEC070CB7F41E /* SettingsInteractorInput.swift */; };
+		F071EA3E66AA11EC38D28D27 /* TransactionDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204B3467116CCCD252847255 /* TransactionDetailPresenter.swift */; };
+		F15B6D59FED14D8EB299AF67 /* TabbedNavigationViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D18C6E65756455085454B06 /* TabbedNavigationViewInput.swift */; };
+		F34C4D1C330AF902D8D8D732 /* DashboardPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3202A06C6B485CC5AC9718 /* DashboardPresenter.swift */; };
+		F7197D2AC376B0841C555704 /* CarEditFormInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4609A619965FB80F1CC427A8 /* CarEditFormInteractor.swift */; };
+		F7295E1E9872E2C1A2D2BA8D /* AddCreditCardViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CBBBF947FBFCF7347339C6 /* AddCreditCardViewOutput.swift */; };
+		F901B6CFE6B81BB6D2BC87C1 /* DashboardViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9AC3DAE3171F678E0E0D0E2 /* DashboardViewInput.swift */; };
+		FA4313CFBD838A4EFCAE9F3F /* EditProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B989C971AC7606D7182148 /* EditProfileRouter.swift */; };
+		FCDA166F405549D3AEC0F54B /* CarsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE226199FA00E0E74D417B2 /* CarsRouterInput.swift */; };
+		FEF4EA89963724FD57BC9CE6 /* NotificationsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60B3D751EE355F6C0FA0C9 /* NotificationsInteractorInput.swift */; };
+		FF2CB0F767FC920CF733E9D8 /* CreditCardsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3A0043B7F1F99B6EF63908 /* CreditCardsViewOutput.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00241CB7B9513B4EA8DB75DE /* CarsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsInteractor.swift; sourceTree = "<group>"; };
+		01CF3F9669B84DB45995431D /* CarEditFormRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormRouter.swift; sourceTree = "<group>"; };
+		0395239D354C43559AAD6058 /* FastTrackModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackModuleInput.swift; sourceTree = "<group>"; };
+		03B350933E9FABDA72861B61 /* LoginSelectionRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionRouter.swift; sourceTree = "<group>"; };
+		09A5F3AFC07D62A320644E6D /* CreateUserRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserRouterInput.swift; sourceTree = "<group>"; };
+		0C35C5C92699B171BBAFEB98 /* SigninWithEmailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailPresenter.swift; sourceTree = "<group>"; };
+		100734179D583B71B6EE6338 /* CreateUserInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserInteractorOutput.swift; sourceTree = "<group>"; };
+		1253118C75FBE4F9B39C78A1 /* DashboardInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardInteractorInput.swift; sourceTree = "<group>"; };
+		1625B563F5B6E30393A13E6B /* TermsAndConditionsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsRouterInput.swift; sourceTree = "<group>"; };
+		174324324E49291BDFB5FDA3 /* DashboardRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardRouterInput.swift; sourceTree = "<group>"; };
+		18078EA5CE68C0422B4B860E /* NotificationsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsPresenter.swift; sourceTree = "<group>"; };
+		1850EB3608B99CA718E99318 /* TabbedNavigationInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationInteractor.swift; sourceTree = "<group>"; };
+		1BCCF40CA004E6F91B12ECAD /* CreditCardsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsViewInput.swift; sourceTree = "<group>"; };
+		1E8CFF82222CBF85A9E3C281 /* CarEditFormViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormViewInput.swift; sourceTree = "<group>"; };
+		1F6A6F452589D60A28E97D79 /* SettingsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		204B3467116CCCD252847255 /* TransactionDetailPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailPresenter.swift; sourceTree = "<group>"; };
+		20CCE8B7B6CB2D90D0DA9082 /* CreditCardsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsModuleInput.swift; sourceTree = "<group>"; };
+		225D2332E9E256C44723D4BF /* TransactionDetailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewController.swift; sourceTree = "<group>"; };
+		225F45B7325B2DD7A802E07A /* TransactionDetailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewOutput.swift; sourceTree = "<group>"; };
+		26DE02E117A2712736077B7A /* HelpInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpInteractor.swift; sourceTree = "<group>"; };
+		274F95B1AC0C320C5F0746CD /* AddCreditCardInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardInteractorOutput.swift; sourceTree = "<group>"; };
+		276CB59544E1D1FA9C56DCCD /* SigninWithEmailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailInteractor.swift; sourceTree = "<group>"; };
+		2A9ECB780603827A59B5E964 /* CreditCardsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsViewController.swift; sourceTree = "<group>"; };
+		2E26FD4739378DA6A463A448 /* FastTrackPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackPresenter.swift; sourceTree = "<group>"; };
+		2EB9758C933B4BE020F95535 /* DashboardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		2ED068CA174BEEC21BD425CC /* CreateUserInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserInteractorInput.swift; sourceTree = "<group>"; };
+		2F4E92A3E96D80A67D4F672B /* SettingsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
+		3205EE24DF33DBBBC0569FA3 /* DashboardModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardModuleInput.swift; sourceTree = "<group>"; };
+		34A0DEBD3940DBB0F6CD6871 /* HelpPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpPresenter.swift; sourceTree = "<group>"; };
+		35135ED8FCA8AFFA416523D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		352A3DBF746CE7A5B841C7F3 /* NotificationsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsInteractorOutput.swift; sourceTree = "<group>"; };
+		35C00F39FC2CB7F2133C1407 /* LoginSelectionViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionViewInput.swift; sourceTree = "<group>"; };
+		37C6436559C0562B8C2F92E3 /* CarEditFormViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormViewController.swift; sourceTree = "<group>"; };
+		389A7F073DD7C9BC45B128AE /* TermsAndConditionsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsInteractorOutput.swift; sourceTree = "<group>"; };
+		3970115E94663C6C85E78A25 /* CreditCardsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsInteractor.swift; sourceTree = "<group>"; };
+		3A3A0043B7F1F99B6EF63908 /* CreditCardsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsViewOutput.swift; sourceTree = "<group>"; };
+		3B1E84DE238D80DE008E3437 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		3B1E84E2238E31EB008E3437 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3B1E84E4238E42D8008E3437 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		3B1E84E6238EBD08008E3437 /* Notch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notch.swift; sourceTree = "<group>"; };
+		3B1E84E8238ECCDD008E3437 /* RunOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunOnDevice.swift; sourceTree = "<group>"; };
+		3B21D0DA23C0D403005B4552 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
+		3B2C285F2382DBDF00983ECE /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2C28622382DBDF00983ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B2C28642382DBDF00983ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3B2C286B2382DBE100983ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B2C28702382DBE100983ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B2C289D2382F11B00983ECE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		3B390CD923C0F09000F34DD9 /* CreditCardFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardFormatter.swift; sourceTree = "<group>"; };
+		3B390CDD23C2577100F34DD9 /* FastTrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackModel.swift; sourceTree = "<group>"; };
+		3B390CDF23C257EB00F34DD9 /* FastTrackRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastTrackRepository.swift; sourceTree = "<group>"; };
+		3B390CE123C2836300F34DD9 /* ServiceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceModel.swift; sourceTree = "<group>"; };
+		3B390CE323C2839500F34DD9 /* ServicesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesRepository.swift; sourceTree = "<group>"; };
+		3B5BBAAD23AF4FEC0061F9FA /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
+		3B73513123AF56C100AD0C9A /* VersionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionInfo.swift; sourceTree = "<group>"; };
+		3B73513323AF5C5A00AD0C9A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3B7897EE2384732000C658BA /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		3B7897F02384734A00C658BA /* DataRepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryFactory.swift; sourceTree = "<group>"; };
+		3B7897F22384762B00C658BA /* DataRepositoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepositoryRequest.swift; sourceTree = "<group>"; };
+		3B7897FF2384A26C00C658BA /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		3B7898052389400000C658BA /* AppCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCordinator.swift; sourceTree = "<group>"; };
+		3B7898072389486A00C658BA /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		3B78980B2389492C00C658BA /* SplashStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashStoryboard.storyboard; sourceTree = "<group>"; };
+		3B7898102389AA7A00C658BA /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		3BAF53F423831C8C00BADEAC /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3BBD246423C5169900DA74F4 /* PushTokenRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTokenRepository.swift; sourceTree = "<group>"; };
+		3BBD246623C517BC00DA74F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BBD246823C51BB300DA74F4 /* PushCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushCordinator.swift; sourceTree = "<group>"; };
+		3BD0A2BD238B1A1300F91604 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		3BDAA83A2389B16200987283 /* ErrorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHelper.swift; sourceTree = "<group>"; };
+		3BDAA83C2389D3BF00987283 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		3BDAA83E2389DBE000987283 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		3BDAA840238A67C600987283 /* BigWhiteTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigWhiteTextField.swift; sourceTree = "<group>"; };
+		3BDAA842238A6B6300987283 /* TermsTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsTextView.swift; sourceTree = "<group>"; };
+		3BDAA844238A736500987283 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		3BDAA846238A8C1900987283 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
+		3BDAA847238A8C2900987283 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		3BDAA849238AD0B900987283 /* AnalyticsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsRepository.swift; sourceTree = "<group>"; };
+		3BDAA84B238AD20500987283 /* VoidModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidModel.swift; sourceTree = "<group>"; };
+		3BEAC7E023C0B3850044CD76 /* CreditCardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardModel.swift; sourceTree = "<group>"; };
+		3BEAC7E223C0B3980044CD76 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		3BEAC7E423C0B45D0044CD76 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		3BEAC7E623C0B4B70044CD76 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		3BEAC7E823C0B5AF0044CD76 /* TransactionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRepository.swift; sourceTree = "<group>"; };
+		3BEAC7EA23C0B5B70044CD76 /* CarRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarRepository.swift; sourceTree = "<group>"; };
+		3BEAC7EC23C0B5CB0044CD76 /* CreditCardRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardRepository.swift; sourceTree = "<group>"; };
+		3BEAC7EE23C0B5DA0044CD76 /* NotificationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRepository.swift; sourceTree = "<group>"; };
+		3BEAC7F023C0C9D40044CD76 /* AmountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmountFormatter.swift; sourceTree = "<group>"; };
+		3C503F873DDFC0C267ED8BD4 /* CarEditFormInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormInteractorInput.swift; sourceTree = "<group>"; };
+		3F450E0E6998052FB179AA19 /* SettingsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsModuleInput.swift; sourceTree = "<group>"; };
+		40C45366B3E90C522DF9EE4D /* NotificationsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		4360F9FDA0CE831F89022F73 /* FastTrackViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackViewOutput.swift; sourceTree = "<group>"; };
+		453A0D561E668771212AC131 /* DashboardViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardViewOutput.swift; sourceTree = "<group>"; };
+		4609A619965FB80F1CC427A8 /* CarEditFormInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormInteractor.swift; sourceTree = "<group>"; };
+		48E004476C96E8161B46FF7A /* TransactionDetailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailModuleInput.swift; sourceTree = "<group>"; };
+		48EDC8534F4832210699F10B /* AddCreditCardViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewInput.swift; sourceTree = "<group>"; };
+		4935F4360DB56D2F02CD2721 /* TabbedNavigationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationViewController.swift; sourceTree = "<group>"; };
+		4A2B041E65ED2A3949909ECC /* CarsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsViewInput.swift; sourceTree = "<group>"; };
+		4A78E57437E2566B5CA80D44 /* EditProfileInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileInteractor.swift; sourceTree = "<group>"; };
+		4DBD668F6B8485D811DFCB66 /* HelpViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpViewInput.swift; sourceTree = "<group>"; };
+		4DE228A7006200CA3CF29E56 /* CreditCardsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsPresenter.swift; sourceTree = "<group>"; };
+		4E429CAD5BAD0A5E99D9D50C /* TabbedNavigationInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationInteractorOutput.swift; sourceTree = "<group>"; };
+		4E445C16EC89C1DAA7C3D649 /* AddCreditCardPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardPresenter.swift; sourceTree = "<group>"; };
+		4EA178CC5B1297BE18721057 /* AddCreditCardRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardRouter.swift; sourceTree = "<group>"; };
+		50A092D7DD7B276F2E528A73 /* ServicesViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesViewOutput.swift; sourceTree = "<group>"; };
+		51CBBBF947FBFCF7347339C6 /* AddCreditCardViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewOutput.swift; sourceTree = "<group>"; };
+		52D28725B0009497C41183F7 /* SigninWithEmailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailViewInput.swift; sourceTree = "<group>"; };
+		56078BFC66F7462CD5687A0C /* TabbedNavigationRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationRouter.swift; sourceTree = "<group>"; };
+		57A2B4A1CD2505599C2BCE30 /* HelpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		57EB31C8B165FF6965A8E35F /* CreditCardsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsRouter.swift; sourceTree = "<group>"; };
+		5A8E58A4E28E3C13565C0571 /* CarEditFormModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormModuleInput.swift; sourceTree = "<group>"; };
+		5C8094C9AA7F7BCF32EA6985 /* CreateUserPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserPresenter.swift; sourceTree = "<group>"; };
+		5E2196644D0B36CEB0F44F79 /* SettingsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		6067A0F6FEB6916D7CCE37DF /* TransactionDetailViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewInput.swift; sourceTree = "<group>"; };
+		6139326D4C51F53422506309 /* DashboardInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardInteractor.swift; sourceTree = "<group>"; };
+		620892C0C2BF0B8D4485A082 /* TabbedNavigationViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationViewOutput.swift; sourceTree = "<group>"; };
+		6498435EF799C42B5A9E65D5 /* LoginSelectionInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionInteractor.swift; sourceTree = "<group>"; };
+		655934EB182BA90FAC859D87 /* LoginSelectionInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionInteractorInput.swift; sourceTree = "<group>"; };
+		67C2FBE0B86AA113FB5B961A /* HelpRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpRouterInput.swift; sourceTree = "<group>"; };
+		6836B9D2C85D10DD13C71D5F /* ServicesInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesInteractorInput.swift; sourceTree = "<group>"; };
+		6AC7068AF98654860C3E84D3 /* AddCreditCardRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardRouterInput.swift; sourceTree = "<group>"; };
+		6D18C6E65756455085454B06 /* TabbedNavigationViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationViewInput.swift; sourceTree = "<group>"; };
+		73F58207CFD7B5D66849AC33 /* CreateUserInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserInteractor.swift; sourceTree = "<group>"; };
+		761259D8DB7AEC070CB7F41E /* SettingsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorInput.swift; sourceTree = "<group>"; };
+		7699B4447223DF71A6B3F8E0 /* CarsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsPresenter.swift; sourceTree = "<group>"; };
+		78AABC7B269A1174A78984C2 /* TermsAndConditionsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewInput.swift; sourceTree = "<group>"; };
+		7A5A2B25F50FA0831A7E6985 /* NotificationsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsRouter.swift; sourceTree = "<group>"; };
+		7A5B66D6DDBA5C769B05F064 /* CarsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
+		7ABC14816D1CDD319424DA24 /* TermsAndConditionsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsInteractorInput.swift; sourceTree = "<group>"; };
+		7B8277A7D82FBF1CDD47A59C /* FastTrackInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackInteractorInput.swift; sourceTree = "<group>"; };
+		7D0A5021815B6FB534508C84 /* EditProfileInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileInteractorInput.swift; sourceTree = "<group>"; };
+		80E6CED492BD1ADD25913C24 /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
+		81A1F66D4FFDDBD9D3387EA6 /* CarsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsInteractorOutput.swift; sourceTree = "<group>"; };
+		835AC2B5583FD5EB6A99D3F2 /* EditProfileRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileRouterInput.swift; sourceTree = "<group>"; };
+		8457627540C62FF5C23B2663 /* CarsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsModuleInput.swift; sourceTree = "<group>"; };
+		8807123C5BF5BCD2E4E09870 /* ServicesInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesInteractorOutput.swift; sourceTree = "<group>"; };
+		88F18D7A7AAE2C8027A70650 /* AddCreditCardInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardInteractorInput.swift; sourceTree = "<group>"; };
+		8A6A91BA0164FDA625745C42 /* EditProfileViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		8CAC707C36F342E2196F2E5F /* EditProfileViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileViewOutput.swift; sourceTree = "<group>"; };
+		8D0CA3A368DC3C07F39A861B /* HelpModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpModuleInput.swift; sourceTree = "<group>"; };
+		8D8EDA2414444F8202651059 /* ServicesViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesViewInput.swift; sourceTree = "<group>"; };
+		8DC6508F8C0D0967A650571A /* EditProfilePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfilePresenter.swift; sourceTree = "<group>"; };
+		8EC59CCB94FDD215C3E6DB42 /* CreditCardsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsInteractorInput.swift; sourceTree = "<group>"; };
+		8EF1BA090481B60A51D80E48 /* AddCreditCardInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardInteractor.swift; sourceTree = "<group>"; };
+		8FF82E0FCF4737DEB85E20B5 /* ServicesPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesPresenter.swift; sourceTree = "<group>"; };
+		9105D15601F42DC296CE2065 /* NotificationsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsInteractor.swift; sourceTree = "<group>"; };
+		92E52C1EA01374C51AE968E7 /* FastTrackRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackRouter.swift; sourceTree = "<group>"; };
+		949D5103AF2029415EF7962A /* TransactionDetailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailRouterInput.swift; sourceTree = "<group>"; };
+		95D05D4640253DD332651C40 /* TermsAndConditionsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsModuleInput.swift; sourceTree = "<group>"; };
+		9675FEF86CA770AC4BBF4FD0 /* CreateUserViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserViewOutput.swift; sourceTree = "<group>"; };
+		96B989C971AC7606D7182148 /* EditProfileRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileRouter.swift; sourceTree = "<group>"; };
+		96D142523C308607570A6047 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		98236554B78929C5605D9C0B /* TransactionDetailInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		9BCE397FBACD32FF9CE9D410 /* LoginSelectionViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionViewOutput.swift; sourceTree = "<group>"; };
+		9E3556046B84BF481996D357 /* SettingsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		A0FFB1B7E7A573056A29F0FD /* HelpViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpViewOutput.swift; sourceTree = "<group>"; };
+		A251B4C4C434B899C4B8B08B /* ServicesViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		A4E6E9351D5D2490926DD317 /* AddCreditCardModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardModuleInput.swift; sourceTree = "<group>"; };
+		A75060399EC92D8E9788934B /* ServicesRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesRouterInput.swift; sourceTree = "<group>"; };
+		A7D90ED75535478F58DDD93E /* SigninWithEmailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailInteractorInput.swift; sourceTree = "<group>"; };
+		A7EEB9B1833346AB7F6805BD /* SigninWithEmailModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailModuleInput.swift; sourceTree = "<group>"; };
+		AB3202A06C6B485CC5AC9718 /* DashboardPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardPresenter.swift; sourceTree = "<group>"; };
+		AB50982A73378C73BCAF6CCD /* TransactionDetailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailRouter.swift; sourceTree = "<group>"; };
+		AB97801FE7EF236FE1A18D06 /* NotificationsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsRouterInput.swift; sourceTree = "<group>"; };
+		ABFB415062B634FD7306692B /* LoginSelectionInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionInteractorOutput.swift; sourceTree = "<group>"; };
+		ACE567CDD3E209B7DE2C672E /* CarsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsViewOutput.swift; sourceTree = "<group>"; };
+		ADF55A059F2B1FBE5C3FF6B9 /* HelpInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpInteractorOutput.swift; sourceTree = "<group>"; };
+		B00D5BDB8CC5DB9F387CBDFB /* CarEditFormInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormInteractorOutput.swift; sourceTree = "<group>"; };
+		B19AB1C6EBEDD1E0F694CBF6 /* LoginSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionViewController.swift; sourceTree = "<group>"; };
+		B4564FCC1D358D913F194186 /* CreateUserViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserViewInput.swift; sourceTree = "<group>"; };
+		B65D0F0C98070DB5E496A785 /* HelpInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpInteractorInput.swift; sourceTree = "<group>"; };
+		B8BFD04CABCB0919F5681219 /* NotificationsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsModuleInput.swift; sourceTree = "<group>"; };
+		B94F815FEE6FECB914F316E0 /* TermsAndConditionsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewOutput.swift; sourceTree = "<group>"; };
+		B985738D5F3C914C29DACE1A /* CarEditFormPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormPresenter.swift; sourceTree = "<group>"; };
+		B9AC3DAE3171F678E0E0D0E2 /* DashboardViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardViewInput.swift; sourceTree = "<group>"; };
+		BB1F660D3E0B76484AC8EF3D /* CarsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsInteractorInput.swift; sourceTree = "<group>"; };
+		BBA71076D94D4059ED9DF7C2 /* TabbedNavigationModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationModuleInput.swift; sourceTree = "<group>"; };
+		BD3C661C0BB0B22903EC86AE /* SettingsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
+		BEDE0AAB00D5B86063650B49 /* ServicesRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesRouter.swift; sourceTree = "<group>"; };
+		C01F09100595212853060DCD /* NotificationsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsViewOutput.swift; sourceTree = "<group>"; };
+		C1A43464BC711901EB080F2B /* SigninWithEmailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailViewController.swift; sourceTree = "<group>"; };
+		C2EBFD10B95C5689BDFAF504 /* TermsAndConditionsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsRouter.swift; sourceTree = "<group>"; };
+		C49DF7E4D15D9EA84331F24F /* LoginSelectionModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionModuleInput.swift; sourceTree = "<group>"; };
+		C66D2F61B630BFD9991D1FAB /* NotificationsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsViewInput.swift; sourceTree = "<group>"; };
+		C70617C363168AD34ADABBBD /* EditProfileModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileModuleInput.swift; sourceTree = "<group>"; };
+		C71C123E967215991956520A /* TermsAndConditionsInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsInteractor.swift; sourceTree = "<group>"; };
+		C7FEC72103B713758E31E147 /* SigninWithEmailRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailRouterInput.swift; sourceTree = "<group>"; };
+		C87D6F899D9A5825DF3C35C6 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C89BD064D8D1848DBBD1F5F8 /* AddCreditCardViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCreditCardViewController.swift; sourceTree = "<group>"; };
+		CAA3766CE8406869AC292DA1 /* EditProfileViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileViewInput.swift; sourceTree = "<group>"; };
+		CAE226199FA00E0E74D417B2 /* CarsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsRouterInput.swift; sourceTree = "<group>"; };
+		CC5E8F6E768E07FECF80A959 /* FastTrackRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackRouterInput.swift; sourceTree = "<group>"; };
+		CCA305B4C3BD83F668B0ADFC /* CreateUserModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserModuleInput.swift; sourceTree = "<group>"; };
+		CD9DA7E0FFB6A0BA0871595F /* CarEditFormViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormViewOutput.swift; sourceTree = "<group>"; };
+		CE60B3D751EE355F6C0FA0C9 /* NotificationsInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsInteractorInput.swift; sourceTree = "<group>"; };
+		D2DC2256B88F7367629871B0 /* CreateUserViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserViewController.swift; sourceTree = "<group>"; };
+		D3857482C66215B1B480A45D /* CarsRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsRouter.swift; sourceTree = "<group>"; };
+		D39B52A08CA7B952550F808B /* FastTrackInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackInteractorOutput.swift; sourceTree = "<group>"; };
+		D414818217A55B374900EA78 /* EditProfileInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EditProfileInteractorOutput.swift; sourceTree = "<group>"; };
+		D6CBCB6D974ED6D6C32039D6 /* SigninWithEmailViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailViewOutput.swift; sourceTree = "<group>"; };
+		D8E539D1FA8C1E3D98D40578 /* TermsAndConditionsPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsPresenter.swift; sourceTree = "<group>"; };
+		D95373EB70B29245469DC248 /* LoginSelectionPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionPresenter.swift; sourceTree = "<group>"; };
+		DA6F291A57AC31444D2D6C06 /* CarEditFormRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormRouterInput.swift; sourceTree = "<group>"; };
+		DCE9E7019F47E638A97DEAAA /* CreditCardsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsInteractorOutput.swift; sourceTree = "<group>"; };
+		E36B35CC77B2BB663A6403F4 /* TransactionDetailInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailInteractorInput.swift; sourceTree = "<group>"; };
+		E4BEBEEE4C104712FF12EDCA /* DashboardRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardRouter.swift; sourceTree = "<group>"; };
+		E51957F597F4A75CC21E1473 /* SigninWithEmailInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailInteractorOutput.swift; sourceTree = "<group>"; };
+		E56EFC01859C83A6F98CC7EF /* CreateUserRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserRouter.swift; sourceTree = "<group>"; };
+		E63658D290A8C029375164F4 /* ServicesInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesInteractor.swift; sourceTree = "<group>"; };
+		E750B4EF8A3A14024BCFB313 /* TabbedNavigationRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationRouterInput.swift; sourceTree = "<group>"; };
+		EBEB8E902662727CF68AC770 /* TransactionDetailInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransactionDetailInteractor.swift; sourceTree = "<group>"; };
+		EDBD0A967ED434B206C4FFD8 /* FastTrackInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackInteractor.swift; sourceTree = "<group>"; };
+		F01040FC90BA2BD41205AA85 /* LoginSelectionRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionRouterInput.swift; sourceTree = "<group>"; };
+		F0A010E864DF5B0329E8A7C4 /* ServicesModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ServicesModuleInput.swift; sourceTree = "<group>"; };
+		F26B83409B01A73FC0F119B5 /* HelpRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpRouter.swift; sourceTree = "<group>"; };
+		F29B4FE752446961FFB8323B /* TermsAndConditionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewController.swift; sourceTree = "<group>"; };
+		F29CEF7AB43233256670DF16 /* SettingsViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		F48085366A75CAC299ECBB7E /* TabbedNavigationInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationInteractorInput.swift; sourceTree = "<group>"; };
+		F622AE74897D531F26106D01 /* SigninWithEmailRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SigninWithEmailRouter.swift; sourceTree = "<group>"; };
+		F64E7169D9BEE1EEA40CE882 /* FastTrackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackViewController.swift; sourceTree = "<group>"; };
+		F782DB786E72BEA31B946241 /* DashboardInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DashboardInteractorOutput.swift; sourceTree = "<group>"; };
+		F794C66A245A8E905E23C88F /* TabbedNavigationPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TabbedNavigationPresenter.swift; sourceTree = "<group>"; };
+		F91E98E1220849BEDF16E646 /* SettingsInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsInteractorOutput.swift; sourceTree = "<group>"; };
+		F99C444E5B4F74B4F2494F25 /* FastTrackViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FastTrackViewInput.swift; sourceTree = "<group>"; };
+		FAD7643CD96DF99D059BB471 /* CreditCardsRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreditCardsRouterInput.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B2C285C2382DBDF00983ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BDAA848238A8C2900987283 /* AuthenticationServices.framework in Frameworks */,
+				4DE09B4DCBC09768F0D9E5DA /* Pods_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000558003790D18FC2001DF2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE60B3D751EE355F6C0FA0C9 /* NotificationsInteractorInput.swift */,
+				352A3DBF746CE7A5B841C7F3 /* NotificationsInteractorOutput.swift */,
+				9105D15601F42DC296CE2065 /* NotificationsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		0506A751F1797C9B399D9CCB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C49DF7E4D15D9EA84331F24F /* LoginSelectionModuleInput.swift */,
+				D95373EB70B29245469DC248 /* LoginSelectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		05B57BA4474158F7007753FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F29CEF7AB43233256670DF16 /* SettingsViewInput.swift */,
+				BD3C661C0BB0B22903EC86AE /* SettingsViewOutput.swift */,
+				35135ED8FCA8AFFA416523D4 /* SettingsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		05BD73A27A0992A93F17F883 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				67C2FBE0B86AA113FB5B961A /* HelpRouterInput.swift */,
+				F26B83409B01A73FC0F119B5 /* HelpRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		0B16E1FAAAB0ECD3DCB7373C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3A113847B7399E19B015EB9C /* View */,
+				786F6B35EF7B73004FED62F5 /* Presenter */,
+				62DC52DB4B0DDB3F90D67515 /* Interactor */,
+				F910287D8F9F77FA81B1EE74 /* Router */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		10B043874E06D8B297C8BA46 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80E6CED492BD1ADD25913C24 /* Pods-App.debug.xcconfig */,
+				96D142523C308607570A6047 /* Pods-App.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		170503E6632A28F68E3EB240 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1625B563F5B6E30393A13E6B /* TermsAndConditionsRouterInput.swift */,
+				C2EBFD10B95C5689BDFAF504 /* TermsAndConditionsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1764A3BB51AC0216E8E49116 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8EC59CCB94FDD215C3E6DB42 /* CreditCardsInteractorInput.swift */,
+				DCE9E7019F47E638A97DEAAA /* CreditCardsInteractorOutput.swift */,
+				3970115E94663C6C85E78A25 /* CreditCardsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		19902C256AEFD1EDF7531930 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				F01040FC90BA2BD41205AA85 /* LoginSelectionRouterInput.swift */,
+				03B350933E9FABDA72861B61 /* LoginSelectionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1CA1072C43CE83B94A05428E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8D0CA3A368DC3C07F39A861B /* HelpModuleInput.swift */,
+				34A0DEBD3940DBB0F6CD6871 /* HelpPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		25C40DA8E6EE24E3700C8755 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6D18C6E65756455085454B06 /* TabbedNavigationViewInput.swift */,
+				620892C0C2BF0B8D4485A082 /* TabbedNavigationViewOutput.swift */,
+				4935F4360DB56D2F02CD2721 /* TabbedNavigationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		27D63FFD5C0A9C6D3D9CC418 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6067A0F6FEB6916D7CCE37DF /* TransactionDetailViewInput.swift */,
+				225F45B7325B2DD7A802E07A /* TransactionDetailViewOutput.swift */,
+				225D2332E9E256C44723D4BF /* TransactionDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2D2AF7C6B3E95B336496E1A4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CCA305B4C3BD83F668B0ADFC /* CreateUserModuleInput.swift */,
+				5C8094C9AA7F7BCF32EA6985 /* CreateUserPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2D8EEADEB14AF50FB31DF1B0 /* Cars */ = {
+			isa = PBXGroup;
+			children = (
+				DF1842C9AF530229B64FEA39 /* View */,
+				852DA754AD30A6DA81E59232 /* Presenter */,
+				4F7FE82FBC6903C68C5A8C46 /* Interactor */,
+				48B588A12D0134641D969330 /* Router */,
+				C8230A120EE5DE224B2C78F0 /* CarEditForm */,
+			);
+			path = Cars;
+			sourceTree = "<group>";
+		};
+		2DB87751ADFB4FAAD1FC4DE9 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				3B78980A238948F600C658BA /* App */,
+				3B789809238948F100C658BA /* Splash */,
+				3B2C28992382E2A300983ECE /* Login */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		33454C72DD19A4F94B714EBD /* TermsAndConditions */ = {
+			isa = PBXGroup;
+			children = (
+				F7236A93CAD9EC6C60A25DE9 /* View */,
+				ED8A6C3E1845D760045E10A7 /* Presenter */,
+				D91969FB93E3CD9D1B6786FC /* Interactor */,
+				170503E6632A28F68E3EB240 /* Router */,
+			);
+			path = TermsAndConditions;
+			sourceTree = "<group>";
+		};
+		3804BCF8B26EEC1BAEE7A6A9 /* Help */ = {
+			isa = PBXGroup;
+			children = (
+				4F72CD5AC313E6B7390547B2 /* View */,
+				1CA1072C43CE83B94A05428E /* Presenter */,
+				A09625C7CFE59FD01C32B552 /* Interactor */,
+				05BD73A27A0992A93F17F883 /* Router */,
+			);
+			path = Help;
+			sourceTree = "<group>";
+		};
+		38AE4C32EFEB9B619A59DD2D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6AC7068AF98654860C3E84D3 /* AddCreditCardRouterInput.swift */,
+				4EA178CC5B1297BE18721057 /* AddCreditCardRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3A113847B7399E19B015EB9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D8EDA2414444F8202651059 /* ServicesViewInput.swift */,
+				50A092D7DD7B276F2E528A73 /* ServicesViewOutput.swift */,
+				A251B4C4C434B899C4B8B08B /* ServicesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B1E84EA238F0EEA008E3437 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				3B7898102389AA7A00C658BA /* SessionManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		3B2C28562382DBDF00983ECE = {
+			isa = PBXGroup;
+			children = (
+				3B1E84E2238E31EB008E3437 /* README.md */,
+				3B2C28612382DBDF00983ECE /* App */,
+				3B2C28602382DBDF00983ECE /* Products */,
+				10B043874E06D8B297C8BA46 /* Pods */,
+				F37BAC3195CD0E0CD95E9D22 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B2C28602382DBDF00983ECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C285F2382DBDF00983ECE /* AppTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B2C28612382DBDF00983ECE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3BBD246623C517BC00DA74F4 /* GoogleService-Info.plist */,
+				3BDAA846238A8C1900987283 /* App.entitlements */,
+				3B1E84EA238F0EEA008E3437 /* managers */,
+				3B78980F2389AA6700C658BA /* helpers */,
+				3BAF53EF23830C4800BADEAC /* repository */,
+				3B2C289C2382EE9900983ECE /* components */,
+				2DB87751ADFB4FAAD1FC4DE9 /* modules */,
+				3BBD246823C51BB300DA74F4 /* PushCordinator.swift */,
+				3B7898052389400000C658BA /* AppCordinator.swift */,
+				3B2C28622382DBDF00983ECE /* AppDelegate.swift */,
+				3B2C28642382DBDF00983ECE /* SceneDelegate.swift */,
+				3B7898072389486A00C658BA /* Launch Screen.storyboard */,
+				3B2C286B2382DBE100983ECE /* Assets.xcassets */,
+				3B2C28702382DBE100983ECE /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B2C28992382E2A300983ECE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				69380B3CD13637411EDA8FB0 /* LoginSelection */,
+				6F1A3399E9E80690C1BB9B1E /* CreateUser */,
+				9CF5E0EC162E22B5DDBB807D /* SigninWithEmail */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3B2C289C2382EE9900983ECE /* components */ = {
+			isa = PBXGroup;
+			children = (
+				3B2C289D2382F11B00983ECE /* LoginButton.swift */,
+				3BDAA840238A67C600987283 /* BigWhiteTextField.swift */,
+				3BDAA842238A6B6300987283 /* TermsTextView.swift */,
+				3BDAA844238A736500987283 /* RoundedButton.swift */,
+				3B1E84E4238E42D8008E3437 /* TabView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		3B7897F423848A5E00C658BA /* requests */ = {
+			isa = PBXGroup;
+			children = (
+				3B7897FF2384A26C00C658BA /* UserRepository.swift */,
+				3BDAA849238AD0B900987283 /* AnalyticsRepository.swift */,
+				3BEAC7EA23C0B5B70044CD76 /* CarRepository.swift */,
+				3BEAC7E823C0B5AF0044CD76 /* TransactionRepository.swift */,
+				3BEAC7EC23C0B5CB0044CD76 /* CreditCardRepository.swift */,
+				3BEAC7EE23C0B5DA0044CD76 /* NotificationRepository.swift */,
+				3B390CDF23C257EB00F34DD9 /* FastTrackRepository.swift */,
+				3B390CE323C2839500F34DD9 /* ServicesRepository.swift */,
+				3BBD246423C5169900DA74F4 /* PushTokenRepository.swift */,
+			);
+			path = requests;
+			sourceTree = "<group>";
+		};
+		3B7897F523848A6300C658BA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3BAF53F423831C8C00BADEAC /* UserModel.swift */,
+				3BDAA84B238AD20500987283 /* VoidModel.swift */,
+				3BD0A2BD238B1A1300F91604 /* ApiError.swift */,
+				3BEAC7E023C0B3850044CD76 /* CreditCardModel.swift */,
+				3BEAC7E223C0B3980044CD76 /* CarModel.swift */,
+				3BEAC7E423C0B45D0044CD76 /* NotificationModel.swift */,
+				3BEAC7E623C0B4B70044CD76 /* TransactionModel.swift */,
+				3B390CDD23C2577100F34DD9 /* FastTrackModel.swift */,
+				3B390CE123C2836300F34DD9 /* ServiceModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3B789809238948F100C658BA /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				3B78980B2389492C00C658BA /* SplashStoryboard.storyboard */,
+				3B1E84DE238D80DE008E3437 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		3B78980A238948F600C658BA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				41C58BBC739494ABCB5BD304 /* TabbedNavigation */,
+				74287122205C74CA85EA3717 /* Dashboard */,
+				2D8EEADEB14AF50FB31DF1B0 /* Cars */,
+				C19DDE3FFCE5B0E3E823E315 /* Notifications */,
+				B279BFA4A5ACB940646BA947 /* Settings */,
+				0B16E1FAAAB0ECD3DCB7373C /* Services */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3B78980F2389AA6700C658BA /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3BDAA83A2389B16200987283 /* ErrorHelper.swift */,
+				3BDAA83C2389D3BF00987283 /* HexColor.swift */,
+				3BDAA83E2389DBE000987283 /* Localization.swift */,
+				3B1E84E6238EBD08008E3437 /* Notch.swift */,
+				3B1E84E8238ECCDD008E3437 /* RunOnDevice.swift */,
+				3B5BBAAD23AF4FEC0061F9FA /* RoundedImage.swift */,
+				3B73513123AF56C100AD0C9A /* VersionInfo.swift */,
+				3B73513323AF5C5A00AD0C9A /* Theme.swift */,
+				3BEAC7F023C0C9D40044CD76 /* AmountFormatter.swift */,
+				3B21D0DA23C0D403005B4552 /* DateFormatting.swift */,
+				3B390CD923C0F09000F34DD9 /* CreditCardFormatter.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		3BAF53EF23830C4800BADEAC /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				3B7897F523848A6300C658BA /* models */,
+				3B7897F423848A5E00C658BA /* requests */,
+				3B7897EE2384732000C658BA /* DataRepository.swift */,
+				3B7897F02384734A00C658BA /* DataRepositoryFactory.swift */,
+				3B7897F22384762B00C658BA /* DataRepositoryRequest.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		3E57C855D8731BB8408D4CA4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F48085366A75CAC299ECBB7E /* TabbedNavigationInteractorInput.swift */,
+				4E429CAD5BAD0A5E99D9D50C /* TabbedNavigationInteractorOutput.swift */,
+				1850EB3608B99CA718E99318 /* TabbedNavigationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		41BDDD02F10054CB1AE645FF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BBA71076D94D4059ED9DF7C2 /* TabbedNavigationModuleInput.swift */,
+				F794C66A245A8E905E23C88F /* TabbedNavigationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		41C58BBC739494ABCB5BD304 /* TabbedNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				25C40DA8E6EE24E3700C8755 /* View */,
+				41BDDD02F10054CB1AE645FF /* Presenter */,
+				3E57C855D8731BB8408D4CA4 /* Interactor */,
+				66D35A751EE2BF6B285F0C0D /* Router */,
+			);
+			path = TabbedNavigation;
+			sourceTree = "<group>";
+		};
+		465363692B785E6B935792F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C66D2F61B630BFD9991D1FAB /* NotificationsViewInput.swift */,
+				C01F09100595212853060DCD /* NotificationsViewOutput.swift */,
+				40C45366B3E90C522DF9EE4D /* NotificationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47D13892EF3651D63352183F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				88F18D7A7AAE2C8027A70650 /* AddCreditCardInteractorInput.swift */,
+				274F95B1AC0C320C5F0746CD /* AddCreditCardInteractorOutput.swift */,
+				8EF1BA090481B60A51D80E48 /* AddCreditCardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		48B588A12D0134641D969330 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CAE226199FA00E0E74D417B2 /* CarsRouterInput.swift */,
+				D3857482C66215B1B480A45D /* CarsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4F72CD5AC313E6B7390547B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4DBD668F6B8485D811DFCB66 /* HelpViewInput.swift */,
+				A0FFB1B7E7A573056A29F0FD /* HelpViewOutput.swift */,
+				57A2B4A1CD2505599C2BCE30 /* HelpViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4F7FE82FBC6903C68C5A8C46 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				BB1F660D3E0B76484AC8EF3D /* CarsInteractorInput.swift */,
+				81A1F66D4FFDDBD9D3387EA6 /* CarsInteractorOutput.swift */,
+				00241CB7B9513B4EA8DB75DE /* CarsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		54918969DAAAD7F894D16919 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BCCF40CA004E6F91B12ECAD /* CreditCardsViewInput.swift */,
+				3A3A0043B7F1F99B6EF63908 /* CreditCardsViewOutput.swift */,
+				2A9ECB780603827A59B5E964 /* CreditCardsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F32BEC4533E026F6010DB6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A7EEB9B1833346AB7F6805BD /* SigninWithEmailModuleInput.swift */,
+				0C35C5C92699B171BBAFEB98 /* SigninWithEmailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		56F0F4A77D9FF96BA486993D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4564FCC1D358D913F194186 /* CreateUserViewInput.swift */,
+				9675FEF86CA770AC4BBF4FD0 /* CreateUserViewOutput.swift */,
+				D2DC2256B88F7367629871B0 /* CreateUserViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57256968C20CEB1A722B7943 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				949D5103AF2029415EF7962A /* TransactionDetailRouterInput.swift */,
+				AB50982A73378C73BCAF6CCD /* TransactionDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		582870241207EAE5D0BCC5E6 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7B8277A7D82FBF1CDD47A59C /* FastTrackInteractorInput.swift */,
+				D39B52A08CA7B952550F808B /* FastTrackInteractorOutput.swift */,
+				EDBD0A967ED434B206C4FFD8 /* FastTrackInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5B7B7D1DDF66E57523C7A9AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				52D28725B0009497C41183F7 /* SigninWithEmailViewInput.swift */,
+				D6CBCB6D974ED6D6C32039D6 /* SigninWithEmailViewOutput.swift */,
+				C1A43464BC711901EB080F2B /* SigninWithEmailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5E8FF966F32D8EE0BDEFC1A8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AB97801FE7EF236FE1A18D06 /* NotificationsRouterInput.swift */,
+				7A5A2B25F50FA0831A7E6985 /* NotificationsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6025B466E7B2BD0F358BEF98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48EDC8534F4832210699F10B /* AddCreditCardViewInput.swift */,
+				51CBBBF947FBFCF7347339C6 /* AddCreditCardViewOutput.swift */,
+				C89BD064D8D1848DBBD1F5F8 /* AddCreditCardViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		62DC52DB4B0DDB3F90D67515 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				6836B9D2C85D10DD13C71D5F /* ServicesInteractorInput.swift */,
+				8807123C5BF5BCD2E4E09870 /* ServicesInteractorOutput.swift */,
+				E63658D290A8C029375164F4 /* ServicesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		6502B2A5B75B0981A68C20D1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C7FEC72103B713758E31E147 /* SigninWithEmailRouterInput.swift */,
+				F622AE74897D531F26106D01 /* SigninWithEmailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		66D35A751EE2BF6B285F0C0D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E750B4EF8A3A14024BCFB313 /* TabbedNavigationRouterInput.swift */,
+				56078BFC66F7462CD5687A0C /* TabbedNavigationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		69380B3CD13637411EDA8FB0 /* LoginSelection */ = {
+			isa = PBXGroup;
+			children = (
+				8C411C0C07518C9D573506F5 /* View */,
+				0506A751F1797C9B399D9CCB /* Presenter */,
+				8027A19BE7F791AD4AA00386 /* Interactor */,
+				19902C256AEFD1EDF7531930 /* Router */,
+			);
+			path = LoginSelection;
+			sourceTree = "<group>";
+		};
+		69D34748CF3BD42EA91337C5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				174324324E49291BDFB5FDA3 /* DashboardRouterInput.swift */,
+				E4BEBEEE4C104712FF12EDCA /* DashboardRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		6F1A3399E9E80690C1BB9B1E /* CreateUser */ = {
+			isa = PBXGroup;
+			children = (
+				56F0F4A77D9FF96BA486993D /* View */,
+				2D2AF7C6B3E95B336496E1A4 /* Presenter */,
+				E73E5694690A4648C5991EF3 /* Interactor */,
+				8E8AEA7099B5A7AB551F123F /* Router */,
+			);
+			path = CreateUser;
+			sourceTree = "<group>";
+		};
+		74287122205C74CA85EA3717 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				D189061E58B7DF097356ABE6 /* TransactionDetail */,
+				759A42DDA30B8D340BB6F4FE /* View */,
+				DE4D3B55813DDCE4D9D65EA6 /* Presenter */,
+				B696DA938D2993CB1DD0B382 /* Interactor */,
+				69D34748CF3BD42EA91337C5 /* Router */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		759A42DDA30B8D340BB6F4FE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B9AC3DAE3171F678E0E0D0E2 /* DashboardViewInput.swift */,
+				453A0D561E668771212AC131 /* DashboardViewOutput.swift */,
+				2EB9758C933B4BE020F95535 /* DashboardViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		786F6B35EF7B73004FED62F5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F0A010E864DF5B0329E8A7C4 /* ServicesModuleInput.swift */,
+				8FF82E0FCF4737DEB85E20B5 /* ServicesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8027A19BE7F791AD4AA00386 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				655934EB182BA90FAC859D87 /* LoginSelectionInteractorInput.swift */,
+				ABFB415062B634FD7306692B /* LoginSelectionInteractorOutput.swift */,
+				6498435EF799C42B5A9E65D5 /* LoginSelectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		815530DEE804E61E554EFF66 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				20CCE8B7B6CB2D90D0DA9082 /* CreditCardsModuleInput.swift */,
+				4DE228A7006200CA3CF29E56 /* CreditCardsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		825C75F98E06BA963E9C3172 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C70617C363168AD34ADABBBD /* EditProfileModuleInput.swift */,
+				8DC6508F8C0D0967A650571A /* EditProfilePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		852DA754AD30A6DA81E59232 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8457627540C62FF5C23B2663 /* CarsModuleInput.swift */,
+				7699B4447223DF71A6B3F8E0 /* CarsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		87329EA2A1D118B4884A517F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2F4E92A3E96D80A67D4F672B /* SettingsRouterInput.swift */,
+				5E2196644D0B36CEB0F44F79 /* SettingsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8790185F34720EE919E48CA3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0395239D354C43559AAD6058 /* FastTrackModuleInput.swift */,
+				2E26FD4739378DA6A463A448 /* FastTrackPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		89944D2538B74C00E58DBF7F /* AddCreditCard */ = {
+			isa = PBXGroup;
+			children = (
+				6025B466E7B2BD0F358BEF98 /* View */,
+				B169CDFFA3793763C59BD1DF /* Presenter */,
+				47D13892EF3651D63352183F /* Interactor */,
+				38AE4C32EFEB9B619A59DD2D /* Router */,
+			);
+			path = AddCreditCard;
+			sourceTree = "<group>";
+		};
+		8A325B7986F68C4E7A857287 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				835AC2B5583FD5EB6A99D3F2 /* EditProfileRouterInput.swift */,
+				96B989C971AC7606D7182148 /* EditProfileRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8C411C0C07518C9D573506F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				35C00F39FC2CB7F2133C1407 /* LoginSelectionViewInput.swift */,
+				9BCE397FBACD32FF9CE9D410 /* LoginSelectionViewOutput.swift */,
+				B19AB1C6EBEDD1E0F694CBF6 /* LoginSelectionViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E87E2881395D53DAD8FEAA0 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				FAD7643CD96DF99D059BB471 /* CreditCardsRouterInput.swift */,
+				57EB31C8B165FF6965A8E35F /* CreditCardsRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8E8AEA7099B5A7AB551F123F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				09A5F3AFC07D62A320644E6D /* CreateUserRouterInput.swift */,
+				E56EFC01859C83A6F98CC7EF /* CreateUserRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		93618F584FC5499103D7BC42 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E8CFF82222CBF85A9E3C281 /* CarEditFormViewInput.swift */,
+				CD9DA7E0FFB6A0BA0871595F /* CarEditFormViewOutput.swift */,
+				37C6436559C0562B8C2F92E3 /* CarEditFormViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		96AF25ED5E8EE55E865A8899 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F291A57AC31444D2D6C06 /* CarEditFormRouterInput.swift */,
+				01CF3F9669B84DB45995431D /* CarEditFormRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		97BE2A1F9EDF8837216A3DE7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7D0A5021815B6FB534508C84 /* EditProfileInteractorInput.swift */,
+				D414818217A55B374900EA78 /* EditProfileInteractorOutput.swift */,
+				4A78E57437E2566B5CA80D44 /* EditProfileInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		9CF5E0EC162E22B5DDBB807D /* SigninWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				5B7B7D1DDF66E57523C7A9AF /* View */,
+				55F32BEC4533E026F6010DB6 /* Presenter */,
+				EB32CC6C750FCE4925ED15DF /* Interactor */,
+				6502B2A5B75B0981A68C20D1 /* Router */,
+			);
+			path = SigninWithEmail;
+			sourceTree = "<group>";
+		};
+		A09625C7CFE59FD01C32B552 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B65D0F0C98070DB5E496A785 /* HelpInteractorInput.swift */,
+				ADF55A059F2B1FBE5C3FF6B9 /* HelpInteractorOutput.swift */,
+				26DE02E117A2712736077B7A /* HelpInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A1AF9FD0976F3C90E0CDD933 /* CreditCards */ = {
+			isa = PBXGroup;
+			children = (
+				54918969DAAAD7F894D16919 /* View */,
+				815530DEE804E61E554EFF66 /* Presenter */,
+				1764A3BB51AC0216E8E49116 /* Interactor */,
+				8E87E2881395D53DAD8FEAA0 /* Router */,
+				89944D2538B74C00E58DBF7F /* AddCreditCard */,
+			);
+			path = CreditCards;
+			sourceTree = "<group>";
+		};
+		B169CDFFA3793763C59BD1DF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A4E6E9351D5D2490926DD317 /* AddCreditCardModuleInput.swift */,
+				4E445C16EC89C1DAA7C3D649 /* AddCreditCardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B279BFA4A5ACB940646BA947 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				05B57BA4474158F7007753FB /* View */,
+				BA565281B603F14C0316C801 /* Presenter */,
+				B2983AA1539B50C4663B1357 /* Interactor */,
+				87329EA2A1D118B4884A517F /* Router */,
+				B5C1AE692B60A8FC8916E7A9 /* EditProfile */,
+				CEFDF12D68EC4806016E2DC5 /* FastTrack */,
+				33454C72DD19A4F94B714EBD /* TermsAndConditions */,
+				3804BCF8B26EEC1BAEE7A6A9 /* Help */,
+				A1AF9FD0976F3C90E0CDD933 /* CreditCards */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B2983AA1539B50C4663B1357 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				761259D8DB7AEC070CB7F41E /* SettingsInteractorInput.swift */,
+				F91E98E1220849BEDF16E646 /* SettingsInteractorOutput.swift */,
+				9E3556046B84BF481996D357 /* SettingsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B5C1AE692B60A8FC8916E7A9 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C50FBF72F3A7D9DBAE0858EC /* View */,
+				825C75F98E06BA963E9C3172 /* Presenter */,
+				97BE2A1F9EDF8837216A3DE7 /* Interactor */,
+				8A325B7986F68C4E7A857287 /* Router */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		B696DA938D2993CB1DD0B382 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1253118C75FBE4F9B39C78A1 /* DashboardInteractorInput.swift */,
+				F782DB786E72BEA31B946241 /* DashboardInteractorOutput.swift */,
+				6139326D4C51F53422506309 /* DashboardInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BA565281B603F14C0316C801 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3F450E0E6998052FB179AA19 /* SettingsModuleInput.swift */,
+				1F6A6F452589D60A28E97D79 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BDE0BE5D9EBB98189C9944ED /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E36B35CC77B2BB663A6403F4 /* TransactionDetailInteractorInput.swift */,
+				98236554B78929C5605D9C0B /* TransactionDetailInteractorOutput.swift */,
+				EBEB8E902662727CF68AC770 /* TransactionDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		BFE4AF7238D915D82DEE1A07 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5A8E58A4E28E3C13565C0571 /* CarEditFormModuleInput.swift */,
+				B985738D5F3C914C29DACE1A /* CarEditFormPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C19DDE3FFCE5B0E3E823E315 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				465363692B785E6B935792F1 /* View */,
+				D91807613E58283FC40E8296 /* Presenter */,
+				000558003790D18FC2001DF2 /* Interactor */,
+				5E8FF966F32D8EE0BDEFC1A8 /* Router */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		C42E96691B52E005D66B324B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				CC5E8F6E768E07FECF80A959 /* FastTrackRouterInput.swift */,
+				92E52C1EA01374C51AE968E7 /* FastTrackRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C50FBF72F3A7D9DBAE0858EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAA3766CE8406869AC292DA1 /* EditProfileViewInput.swift */,
+				8CAC707C36F342E2196F2E5F /* EditProfileViewOutput.swift */,
+				8A6A91BA0164FDA625745C42 /* EditProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C8230A120EE5DE224B2C78F0 /* CarEditForm */ = {
+			isa = PBXGroup;
+			children = (
+				93618F584FC5499103D7BC42 /* View */,
+				BFE4AF7238D915D82DEE1A07 /* Presenter */,
+				D2B2376778FE1149DD8DEED5 /* Interactor */,
+				96AF25ED5E8EE55E865A8899 /* Router */,
+			);
+			path = CarEditForm;
+			sourceTree = "<group>";
+		};
+		CEFDF12D68EC4806016E2DC5 /* FastTrack */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA78BC615AE11343CE2BAD /* View */,
+				8790185F34720EE919E48CA3 /* Presenter */,
+				582870241207EAE5D0BCC5E6 /* Interactor */,
+				C42E96691B52E005D66B324B /* Router */,
+			);
+			path = FastTrack;
+			sourceTree = "<group>";
+		};
+		D189061E58B7DF097356ABE6 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				27D63FFD5C0A9C6D3D9CC418 /* View */,
+				EB8E797D67714119676DAEE4 /* Presenter */,
+				BDE0BE5D9EBB98189C9944ED /* Interactor */,
+				57256968C20CEB1A722B7943 /* Router */,
+			);
+			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
+		D2B2376778FE1149DD8DEED5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3C503F873DDFC0C267ED8BD4 /* CarEditFormInteractorInput.swift */,
+				B00D5BDB8CC5DB9F387CBDFB /* CarEditFormInteractorOutput.swift */,
+				4609A619965FB80F1CC427A8 /* CarEditFormInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		D91807613E58283FC40E8296 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B8BFD04CABCB0919F5681219 /* NotificationsModuleInput.swift */,
+				18078EA5CE68C0422B4B860E /* NotificationsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D91969FB93E3CD9D1B6786FC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7ABC14816D1CDD319424DA24 /* TermsAndConditionsInteractorInput.swift */,
+				389A7F073DD7C9BC45B128AE /* TermsAndConditionsInteractorOutput.swift */,
+				C71C123E967215991956520A /* TermsAndConditionsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DE4D3B55813DDCE4D9D65EA6 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3205EE24DF33DBBBC0569FA3 /* DashboardModuleInput.swift */,
+				AB3202A06C6B485CC5AC9718 /* DashboardPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DF1842C9AF530229B64FEA39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B041E65ED2A3949909ECC /* CarsViewInput.swift */,
+				ACE567CDD3E209B7DE2C672E /* CarsViewOutput.swift */,
+				7A5B66D6DDBA5C769B05F064 /* CarsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E73E5694690A4648C5991EF3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2ED068CA174BEEC21BD425CC /* CreateUserInteractorInput.swift */,
+				100734179D583B71B6EE6338 /* CreateUserInteractorOutput.swift */,
+				73F58207CFD7B5D66849AC33 /* CreateUserInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB32CC6C750FCE4925ED15DF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A7D90ED75535478F58DDD93E /* SigninWithEmailInteractorInput.swift */,
+				E51957F597F4A75CC21E1473 /* SigninWithEmailInteractorOutput.swift */,
+				276CB59544E1D1FA9C56DCCD /* SigninWithEmailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB8E797D67714119676DAEE4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				48E004476C96E8161B46FF7A /* TransactionDetailModuleInput.swift */,
+				204B3467116CCCD252847255 /* TransactionDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ED8A6C3E1845D760045E10A7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				95D05D4640253DD332651C40 /* TermsAndConditionsModuleInput.swift */,
+				D8E539D1FA8C1E3D98D40578 /* TermsAndConditionsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EFCA78BC615AE11343CE2BAD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F99C444E5B4F74B4F2494F25 /* FastTrackViewInput.swift */,
+				4360F9FDA0CE831F89022F73 /* FastTrackViewOutput.swift */,
+				F64E7169D9BEE1EEA40CE882 /* FastTrackViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F37BAC3195CD0E0CD95E9D22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BDAA847238A8C2900987283 /* AuthenticationServices.framework */,
+				C87D6F899D9A5825DF3C35C6 /* Pods_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7236A93CAD9EC6C60A25DE9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				78AABC7B269A1174A78984C2 /* TermsAndConditionsViewInput.swift */,
+				B94F815FEE6FECB914F316E0 /* TermsAndConditionsViewOutput.swift */,
+				F29B4FE752446961FFB8323B /* TermsAndConditionsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F910287D8F9F77FA81B1EE74 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A75060399EC92D8E9788934B /* ServicesRouterInput.swift */,
+				BEDE0AAB00D5B86063650B49 /* ServicesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B2C285E2382DBDF00983ECE /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B2C28892382DBE100983ECE /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				957E6673B308EB7E01BA5304 /* [CP] Check Pods Manifest.lock */,
+				3B2C285B2382DBDF00983ECE /* Sources */,
+				3B2C285C2382DBDF00983ECE /* Frameworks */,
+				3B2C285D2382DBDF00983ECE /* Resources */,
+				3BAF53EE23830A6E00BADEAC /* ShellScript */,
+				95F5CED84DB32F1CA1365C26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App;
+			productName = HuntPlan;
+			productReference = 3B2C285F2382DBDF00983ECE /* AppTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B2C28572382DBDF00983ECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "House of Code ApS";
+				TargetAttributes = {
+					3B2C285E2382DBDF00983ECE = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B2C285A2382DBDF00983ECE /* Build configuration list for PBXProject "App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B2C28562382DBDF00983ECE;
+			productRefGroup = 3B2C28602382DBDF00983ECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B2C285E2382DBDF00983ECE /* App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B2C285D2382DBDF00983ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B78980C2389492C00C658BA /* SplashStoryboard.storyboard in Resources */,
+				3B1E84E3238E31EB008E3437 /* README.md in Resources */,
+				3BBD246723C517BC00DA74F4 /* GoogleService-Info.plist in Resources */,
+				3B7898082389486A00C658BA /* Launch Screen.storyboard in Resources */,
+				3B2C286C2382DBE100983ECE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BAF53EE23830A6E00BADEAC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+		};
+		957E6673B308EB7E01BA5304 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95F5CED84DB32F1CA1365C26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B2C285B2382DBDF00983ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B2C28632382DBDF00983ECE /* AppDelegate.swift in Sources */,
+				3B2C28652382DBDF00983ECE /* SceneDelegate.swift in Sources */,
+				3BD0A2BE238B1A1300F91604 /* ApiError.swift in Sources */,
+				3B7898002384A26C00C658BA /* UserRepository.swift in Sources */,
+				D6600476235BFDBD94479237 /* LoginSelectionViewInput.swift in Sources */,
+				CFDB7C8384954B8C17437F7C /* LoginSelectionViewOutput.swift in Sources */,
+				3BDAA843238A6B6300987283 /* TermsTextView.swift in Sources */,
+				4131F1F93FDD96C8DC6DE8E4 /* LoginSelectionViewController.swift in Sources */,
+				061EFAE7A8477BF4B2B42384 /* LoginSelectionModuleInput.swift in Sources */,
+				3B7898112389AA7A00C658BA /* SessionManager.swift in Sources */,
+				570978C733E95143BD53DBB7 /* LoginSelectionPresenter.swift in Sources */,
+				3B7897F12384734A00C658BA /* DataRepositoryFactory.swift in Sources */,
+				2B3F9B90B476C2931EC0CA38 /* LoginSelectionInteractorInput.swift in Sources */,
+				C8A3C5641951E86A34B88A13 /* LoginSelectionInteractorOutput.swift in Sources */,
+				77C0BDB6F62E0F61271ED0DE /* LoginSelectionInteractor.swift in Sources */,
+				AA1941A97B914D2D62420632 /* LoginSelectionRouterInput.swift in Sources */,
+				28C658594EC4EF4F5BD11DB2 /* LoginSelectionRouter.swift in Sources */,
+				41D8F1ED3459E07D37181384 /* CreateUserViewInput.swift in Sources */,
+				E1E254E433E233F361866AF6 /* CreateUserViewOutput.swift in Sources */,
+				3BEAC7ED23C0B5CB0044CD76 /* CreditCardRepository.swift in Sources */,
+				09DBDFEAD67930589BA8D747 /* CreateUserViewController.swift in Sources */,
+				547E0322917408476313D2DC /* CreateUserModuleInput.swift in Sources */,
+				C88CC9E94883552A87111C73 /* CreateUserPresenter.swift in Sources */,
+				3BDAA83B2389B16200987283 /* ErrorHelper.swift in Sources */,
+				3BEAC7E923C0B5AF0044CD76 /* TransactionRepository.swift in Sources */,
+				3B390CE223C2836300F34DD9 /* ServiceModel.swift in Sources */,
+				A83A58C15BFC69C63F895C08 /* CreateUserInteractorInput.swift in Sources */,
+				A845BB0B7BD343011F037B86 /* CreateUserInteractorOutput.swift in Sources */,
+				3BAF53F523831C8C00BADEAC /* UserModel.swift in Sources */,
+				3BDAA841238A67C600987283 /* BigWhiteTextField.swift in Sources */,
+				3B1E84E5238E42D8008E3437 /* TabView.swift in Sources */,
+				3BEAC7E523C0B45D0044CD76 /* NotificationModel.swift in Sources */,
+				3B7897EF2384732000C658BA /* DataRepository.swift in Sources */,
+				166226A3FCB2494E70EBEF81 /* CreateUserInteractor.swift in Sources */,
+				3BDAA84A238AD0B900987283 /* AnalyticsRepository.swift in Sources */,
+				4521542DE7B0906A7368BCEB /* CreateUserRouterInput.swift in Sources */,
+				3BDAA845238A736500987283 /* RoundedButton.swift in Sources */,
+				A35EFC110D18B820EC19813C /* CreateUserRouter.swift in Sources */,
+				3B2C289E2382F11B00983ECE /* LoginButton.swift in Sources */,
+				3B1E84E9238ECCDD008E3437 /* RunOnDevice.swift in Sources */,
+				40ABC119C86B30BEE1C510E0 /* SigninWithEmailViewInput.swift in Sources */,
+				18BC411D8A7332CDA7D66153 /* SigninWithEmailViewOutput.swift in Sources */,
+				9F831DFFBCB7181EBB17A95C /* SigninWithEmailViewController.swift in Sources */,
+				B0A2B7C9FCAEDA4E866D546E /* SigninWithEmailModuleInput.swift in Sources */,
+				3BDAA84C238AD20500987283 /* VoidModel.swift in Sources */,
+				3B390CDA23C0F09000F34DD9 /* CreditCardFormatter.swift in Sources */,
+				3B1E84DF238D80DE008E3437 /* SplashViewController.swift in Sources */,
+				3BDAA83F2389DBE000987283 /* Localization.swift in Sources */,
+				52409B53526BAF7C56D8E7A6 /* SigninWithEmailPresenter.swift in Sources */,
+				A4C9E7434110DD7DF3E2C59D /* SigninWithEmailInteractorInput.swift in Sources */,
+				3B7898062389400000C658BA /* AppCordinator.swift in Sources */,
+				69F762BC6926C90A6819B266 /* SigninWithEmailInteractorOutput.swift in Sources */,
+				3BDAA83D2389D3BF00987283 /* HexColor.swift in Sources */,
+				C0523DF94B155B7AF9842E66 /* SigninWithEmailInteractor.swift in Sources */,
+				A696D0385FEAF0F8A4BC17DE /* SigninWithEmailRouterInput.swift in Sources */,
+				9766569451F0AF344F8CDFF4 /* SigninWithEmailRouter.swift in Sources */,
+				3B7897F32384762B00C658BA /* DataRepositoryRequest.swift in Sources */,
+				F15B6D59FED14D8EB299AF67 /* TabbedNavigationViewInput.swift in Sources */,
+				0EAA54D6AA0E0F16089A3935 /* TabbedNavigationViewOutput.swift in Sources */,
+				3B1E84E7238EBD08008E3437 /* Notch.swift in Sources */,
+				A117A6F3D3453944D8423930 /* TabbedNavigationViewController.swift in Sources */,
+				7BCE31698F45AA860956C704 /* TabbedNavigationModuleInput.swift in Sources */,
+				3B73513423AF5C5A00AD0C9A /* Theme.swift in Sources */,
+				12E4066C91BBCD408391F232 /* TabbedNavigationPresenter.swift in Sources */,
+				3BEAC7E723C0B4B70044CD76 /* TransactionModel.swift in Sources */,
+				D4B9D49FC8A26579D4D7BEC6 /* TabbedNavigationInteractorInput.swift in Sources */,
+				58FCF423674EA7EAD80AB392 /* TabbedNavigationInteractorOutput.swift in Sources */,
+				2A0F2373A68840BF3ACB7CF4 /* TabbedNavigationInteractor.swift in Sources */,
+				3B73513223AF56C100AD0C9A /* VersionInfo.swift in Sources */,
+				3BEAC7F123C0C9D40044CD76 /* AmountFormatter.swift in Sources */,
+				4C94E6338C4CBF6E7F3C7919 /* TabbedNavigationRouterInput.swift in Sources */,
+				E0DB9D4DD28B3EFD2BA75121 /* TabbedNavigationRouter.swift in Sources */,
+				F901B6CFE6B81BB6D2BC87C1 /* DashboardViewInput.swift in Sources */,
+				1FC0BCA6FFEB2BCEC3F75B44 /* DashboardViewOutput.swift in Sources */,
+				893BD2EAA640C64D0A720552 /* DashboardViewController.swift in Sources */,
+				600A49AE75D943A63F470760 /* DashboardModuleInput.swift in Sources */,
+				F34C4D1C330AF902D8D8D732 /* DashboardPresenter.swift in Sources */,
+				3BBD246523C5169900DA74F4 /* PushTokenRepository.swift in Sources */,
+				14E352A33806E19FE79E4EA2 /* DashboardInteractorInput.swift in Sources */,
+				3B21D0DB23C0D403005B4552 /* DateFormatting.swift in Sources */,
+				7EC75706A1299CE26BD09794 /* DashboardInteractorOutput.swift in Sources */,
+				48B8C0789E016927C016D3FF /* DashboardInteractor.swift in Sources */,
+				1BDEF199AAC8C8B724F3BF97 /* DashboardRouterInput.swift in Sources */,
+				3BEAC7E323C0B3980044CD76 /* CarModel.swift in Sources */,
+				851C8B52CAFDDE6F43AC3C18 /* DashboardRouter.swift in Sources */,
+				893B20F1461BEF6DC2D71EF1 /* NotificationsViewInput.swift in Sources */,
+				0589AFD2459FFD794B829390 /* NotificationsViewOutput.swift in Sources */,
+				0A2B93057C1AB0376F68AD13 /* NotificationsViewController.swift in Sources */,
+				17A077243AF3A5971E63C8A1 /* NotificationsModuleInput.swift in Sources */,
+				267BBD7EEDF33133D70008EC /* NotificationsPresenter.swift in Sources */,
+				FEF4EA89963724FD57BC9CE6 /* NotificationsInteractorInput.swift in Sources */,
+				A280A48C013D838925480588 /* NotificationsInteractorOutput.swift in Sources */,
+				D75314FC0A9E8B494B2DBE6D /* NotificationsInteractor.swift in Sources */,
+				D10E7F77A026F1FC5150ABB0 /* NotificationsRouterInput.swift in Sources */,
+				AF1418A5871E706216E06240 /* NotificationsRouter.swift in Sources */,
+				3B5BBAAE23AF4FEC0061F9FA /* RoundedImage.swift in Sources */,
+				3B390CE023C257EB00F34DD9 /* FastTrackRepository.swift in Sources */,
+				3345811173D06A161723A57A /* SettingsViewInput.swift in Sources */,
+				511412318B37F3B5F2A32936 /* SettingsViewOutput.swift in Sources */,
+				ED0F2C87FA62E7B2C7293CF9 /* SettingsViewController.swift in Sources */,
+				3BEAC7EF23C0B5DA0044CD76 /* NotificationRepository.swift in Sources */,
+				8E49C64734B9E98DF9B5F3ED /* SettingsModuleInput.swift in Sources */,
+				43256F19609EE9353A4BBAC5 /* SettingsPresenter.swift in Sources */,
+				F03575F22AD39E138D98B6AC /* SettingsInteractorInput.swift in Sources */,
+				D010FB5BCFC346E4D258A4B4 /* SettingsInteractorOutput.swift in Sources */,
+				5BB406344F4DB20E1C67DFB6 /* SettingsInteractor.swift in Sources */,
+				66020D8FDD12F6C3BB338398 /* SettingsRouterInput.swift in Sources */,
+				3BEAC7E123C0B3850044CD76 /* CreditCardModel.swift in Sources */,
+				BC5EF9E8A81A2F17989EAB95 /* SettingsRouter.swift in Sources */,
+				3B390CE423C2839500F34DD9 /* ServicesRepository.swift in Sources */,
+				E1E3F78CBF0B0D80A2EED32F /* EditProfileViewInput.swift in Sources */,
+				0F085D3A73D9C72E95562209 /* EditProfileViewOutput.swift in Sources */,
+				684A2658BF2E6B1CF76CC1BA /* EditProfileViewController.swift in Sources */,
+				70A740C7ABE722191E03F53E /* EditProfileModuleInput.swift in Sources */,
+				EE55144D2E1F422CFA877795 /* EditProfilePresenter.swift in Sources */,
+				699FBBF78F8D403C0E38FE94 /* EditProfileInteractorInput.swift in Sources */,
+				E277BD44457F6C9FBBBF7CBD /* EditProfileInteractorOutput.swift in Sources */,
+				3BBD246923C51BB300DA74F4 /* PushCordinator.swift in Sources */,
+				BBB1C4C1DEB648C3D0FBE331 /* EditProfileInteractor.swift in Sources */,
+				84B11A918EF28F03B28239E0 /* EditProfileRouterInput.swift in Sources */,
+				FA4313CFBD838A4EFCAE9F3F /* EditProfileRouter.swift in Sources */,
+				626591E5A89247F3D708C19C /* FastTrackViewInput.swift in Sources */,
+				6CE7C141BF05B1CE5041056E /* FastTrackViewOutput.swift in Sources */,
+				54469A4CAD0E9FF9DFAEC955 /* FastTrackViewController.swift in Sources */,
+				3B390CDE23C2577100F34DD9 /* FastTrackModel.swift in Sources */,
+				D69C8B962218EF9591136826 /* FastTrackModuleInput.swift in Sources */,
+				045D15BC9E86725068C895F6 /* FastTrackPresenter.swift in Sources */,
+				0D336658F476CD5A2379A037 /* FastTrackInteractorInput.swift in Sources */,
+				6477DA8A9567FE8E2DD85C08 /* FastTrackInteractorOutput.swift in Sources */,
+				2B97605744272A2DB2C90BF1 /* FastTrackInteractor.swift in Sources */,
+				5A577BC6579DE28213D76E35 /* FastTrackRouterInput.swift in Sources */,
+				8265A36BB8590695FF2E8137 /* FastTrackRouter.swift in Sources */,
+				8DEB51F0C2EC836E5A6B64D6 /* TermsAndConditionsViewInput.swift in Sources */,
+				849E2F38AD2B8EDDC62FD69B /* TermsAndConditionsViewOutput.swift in Sources */,
+				AF322DB8FA3DD32219A5AEB3 /* TermsAndConditionsViewController.swift in Sources */,
+				2FD91EA1D51149C7C770692F /* TermsAndConditionsModuleInput.swift in Sources */,
+				4EC2C75631E55505015E2013 /* TermsAndConditionsPresenter.swift in Sources */,
+				3BEAC7EB23C0B5B70044CD76 /* CarRepository.swift in Sources */,
+				C877E1A6C00FC137F0127D75 /* TermsAndConditionsInteractorInput.swift in Sources */,
+				A83349B7569BAA3940B91AE8 /* TermsAndConditionsInteractorOutput.swift in Sources */,
+				E0F5BF7E365424210D08C6F1 /* TermsAndConditionsInteractor.swift in Sources */,
+				611BCF954CF03E9317727AB0 /* TermsAndConditionsRouterInput.swift in Sources */,
+				A6D5FBE77D958ED0026156E4 /* TermsAndConditionsRouter.swift in Sources */,
+				E79E4BBC2AFD3125871F45A5 /* HelpViewInput.swift in Sources */,
+				D117FFF2DCCBA08ADEED51FB /* HelpViewOutput.swift in Sources */,
+				B32F57D789161D72CB3E234E /* HelpViewController.swift in Sources */,
+				A7A10CAF0CE1DF4A6E65FC28 /* HelpModuleInput.swift in Sources */,
+				3E4BDA99CAB19E8F20366062 /* HelpPresenter.swift in Sources */,
+				51EBDC436BFD5E20086ACB0F /* HelpInteractorInput.swift in Sources */,
+				410AED6A8ACE26E3BC2331FC /* HelpInteractorOutput.swift in Sources */,
+				5FE8E978C142CE55919B3442 /* HelpInteractor.swift in Sources */,
+				9AB9927C065C87EABC0AE5F2 /* HelpRouterInput.swift in Sources */,
+				A109C501B93E9F93905E2C46 /* HelpRouter.swift in Sources */,
+				B17EBDD3869339CDA6D52351 /* CarsViewInput.swift in Sources */,
+				816714BDE6AE65310C19666A /* CarsViewOutput.swift in Sources */,
+				89E114F17FC6151689CF9FBA /* CarsViewController.swift in Sources */,
+				ED6CD6FB1BC2A110C7B21DEF /* CarsModuleInput.swift in Sources */,
+				1AB9E9B4E07D159E176A606A /* CarsPresenter.swift in Sources */,
+				0B56BDE6E2274B9164DA7E93 /* CarsInteractorInput.swift in Sources */,
+				270E7ECF60A16A30B50A975F /* CarsInteractorOutput.swift in Sources */,
+				115E7A10A09EC9F1EB643D47 /* CarsInteractor.swift in Sources */,
+				FCDA166F405549D3AEC0F54B /* CarsRouterInput.swift in Sources */,
+				3C1FC6482BDA4C820CF25D31 /* CarsRouter.swift in Sources */,
+				0CE63EA8E925BA33F0AF6E10 /* TransactionDetailViewInput.swift in Sources */,
+				EB3F1ADF9BD1DE4292F9A113 /* TransactionDetailViewOutput.swift in Sources */,
+				7010425765F4DD9F0BF84060 /* TransactionDetailViewController.swift in Sources */,
+				60443A3CADE31FA1D47769C3 /* TransactionDetailModuleInput.swift in Sources */,
+				F071EA3E66AA11EC38D28D27 /* TransactionDetailPresenter.swift in Sources */,
+				71D6BB8C9656951B13631685 /* TransactionDetailInteractorInput.swift in Sources */,
+				0E8DDB2C5E43C30F0F2102EA /* TransactionDetailInteractorOutput.swift in Sources */,
+				749E4E72DCFF43F02E4DD93A /* TransactionDetailInteractor.swift in Sources */,
+				B59069C2C820720E0D50A60C /* TransactionDetailRouterInput.swift in Sources */,
+				B3188FCC018ADC7019E64418 /* TransactionDetailRouter.swift in Sources */,
+				4F973C340684C9400E58A85A /* CarEditFormViewInput.swift in Sources */,
+				6C110DE0F8BCB09D1AE4833D /* CarEditFormViewOutput.swift in Sources */,
+				E65787DB518E5D164A47840A /* CarEditFormViewController.swift in Sources */,
+				D2C7642FC07163A49CC941E4 /* CarEditFormModuleInput.swift in Sources */,
+				00AE682611A6892DEED6FBC0 /* CarEditFormPresenter.swift in Sources */,
+				833A3F4FC32FCA90C4BAD94F /* CarEditFormInteractorInput.swift in Sources */,
+				9AB731E46724FCEC597C870A /* CarEditFormInteractorOutput.swift in Sources */,
+				F7197D2AC376B0841C555704 /* CarEditFormInteractor.swift in Sources */,
+				B698C80FD14B17901846FE1E /* CarEditFormRouterInput.swift in Sources */,
+				E53F7005E7B89EC476557600 /* CarEditFormRouter.swift in Sources */,
+				3B4CA1C32FA4B3B37F118DB5 /* CreditCardsViewInput.swift in Sources */,
+				FF2CB0F767FC920CF733E9D8 /* CreditCardsViewOutput.swift in Sources */,
+				E5EB4E0AC26EC83D40DF29DE /* CreditCardsViewController.swift in Sources */,
+				CE0E2D1D7CCF3971B5B009B9 /* CreditCardsModuleInput.swift in Sources */,
+				1C57362ECE19E2980B89BFFE /* CreditCardsPresenter.swift in Sources */,
+				2128327C14879D08369C474E /* CreditCardsInteractorInput.swift in Sources */,
+				2280CAACF191E91053D940A1 /* CreditCardsInteractorOutput.swift in Sources */,
+				484496BF7B8316F8880333E5 /* CreditCardsInteractor.swift in Sources */,
+				9282E71D7E8F44BD8EF5BF7F /* CreditCardsRouterInput.swift in Sources */,
+				DAC43FF7F2424422A45FEDA8 /* CreditCardsRouter.swift in Sources */,
+				754E3C2488F741BC016020B2 /* AddCreditCardViewInput.swift in Sources */,
+				F7295E1E9872E2C1A2D2BA8D /* AddCreditCardViewOutput.swift in Sources */,
+				46CECEA557F595C0FC49FF65 /* AddCreditCardViewController.swift in Sources */,
+				78BD48E278E1F7D74D0692C7 /* AddCreditCardModuleInput.swift in Sources */,
+				601D6C135E3A34EA24C84938 /* AddCreditCardPresenter.swift in Sources */,
+				AF4A7ACDC4A1170B62746B0B /* AddCreditCardInteractorInput.swift in Sources */,
+				64786C075BD566814B2DF135 /* AddCreditCardInteractorOutput.swift in Sources */,
+				19649E37AE21BF5B27FED2CD /* AddCreditCardInteractor.swift in Sources */,
+				42B263BD61C52CCF832444BB /* AddCreditCardRouterInput.swift in Sources */,
+				17C4064E3E0CFB9ED8FA2F38 /* AddCreditCardRouter.swift in Sources */,
+				64AC775DE0A96003A82C9310 /* ServicesViewInput.swift in Sources */,
+				2D396E2007EE18E1FC33CA94 /* ServicesViewOutput.swift in Sources */,
+				B0045EE7D49EA02909501447 /* ServicesViewController.swift in Sources */,
+				C2FA04D48D5624B12DCF0E18 /* ServicesModuleInput.swift in Sources */,
+				16F2A56DF6AE7AB0BAA7A122 /* ServicesPresenter.swift in Sources */,
+				8699426E8F29E235B61B3C45 /* ServicesInteractorInput.swift in Sources */,
+				76C8BF5518F65D8023EB3DA1 /* ServicesInteractorOutput.swift in Sources */,
+				5921395B3040935679D7DA92 /* ServicesInteractor.swift in Sources */,
+				C7664F0A19617B42E628654F /* ServicesRouterInput.swift in Sources */,
+				5F781777ECD442EB2985556B /* ServicesRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B2C28872382DBE100983ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B2C28882382DBE100983ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B2C288A2382DBE100983ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80E6CED492BD1ADD25913C24 /* Pods-App.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADY83YFFM5;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.apptemplate;
+				PRODUCT_NAME = AppTemplate;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3B2C288B2382DBE100983ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D142523C308607570A6047 /* Pods-App.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ADY83YFFM5;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.apptemplate;
+				PRODUCT_NAME = AppTemplate;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B2C285A2382DBDF00983ECE /* Build configuration list for PBXProject "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2C28872382DBE100983ECE /* Debug */,
+				3B2C28882382DBE100983ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B2C28892382DBE100983ECE /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B2C288A2382DBE100983ECE /* Debug */,
+				3B2C288B2382DBE100983ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B2C28572382DBDF00983ECE /* Project object */;
+}
