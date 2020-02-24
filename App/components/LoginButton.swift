@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+
 @IBDesignable
 class LoginButton: UIControl {
     
@@ -100,7 +101,7 @@ class LoginButton: UIControl {
 extension LoginButton {
     static func facebook() -> LoginButton {
         let button = LoginButton()
-        button.text = "Log ind med Facebook".localize()
+        button.text = "Login with Facebook".localize()
         button.cornerRadius = 10.0
         button.backgroundColor = "#4267B2".color()
         button.textColor = UIColor.white
@@ -110,7 +111,7 @@ extension LoginButton {
     
     static func email() -> LoginButton {
         let button = LoginButton()
-        button.text = "Log ind med E-mail".localize()
+        button.text = "Login with E-mail".localize()
         button.cornerRadius = 10.0
         button.backgroundColor = "#EAAA47".color()
         button.textColor = UIColor.white
@@ -120,7 +121,7 @@ extension LoginButton {
     
     static func apple() -> LoginButton {
         let button = LoginButton()
-        button.text = "Log ind med Apple".localize()
+        button.text = "Login with Apple".localize()
         button.cornerRadius = 10.0
         button.image = UIImage(named: "apple")
         button.backgroundColor = .white

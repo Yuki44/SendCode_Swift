@@ -34,8 +34,8 @@ extension UITextView {
         
         let group = StyleGroup.init(base: normal, ["a" : link])
         
-        let bodyHTML = "Ved at forsætte accepterer du vores <a href=\"http://www.houseofcode.io\">Betingelser fo rbrug</a> samt vores <a href=\"http://www.houseofcode.io\">Privatlivs politik</a>.".localize()
-        
+        let bodyHTML = "By continuing, you agree to our <a href=\"http://www.houseofcode.io\"> Terms of Use </a> and our <a href=\"http://www.houseofcode.io\"> Privacy Policy </a>.".localize()
+
         terms.attributedText = bodyHTML.set(style: group)
         
         return terms

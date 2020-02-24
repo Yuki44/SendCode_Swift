@@ -35,7 +35,7 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
         background.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }*/
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .white
         
         var offset = 86.0
         UIDevice.onIphone5 {
@@ -56,7 +56,7 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
 
         headerLabel.font = UIFont.boldSystemFont(ofSize: 25)
         headerLabel.textColor = UIColor.white
-        headerLabel.text = "Velkommen til CarPay".localize()
+        headerLabel.text = "Welcome to Send Code!".localize()
         
         // Email
         let signWithEmailButton = LoginButton.email()
@@ -131,7 +131,7 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
             make.centerX.equalToSuperview()
         }
         
-        orLabel.text = "eller".localize()
+        orLabel.text = "or".localize()
         orLabel.textColor = .white
         
         // Create profile
@@ -156,7 +156,7 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
             style.font = UIFont.boldSystemFont(ofSize: 15.0)
         }
         
-        createProfileButton.setAttributedTitle("Opret profil".localize().set(style: style), for: .normal)
+        createProfileButton.setAttributedTitle("Create an account".localize().set(style: style), for: .normal)
         
         createProfileButton.addTarget(self.output,
                                       action: #selector(self.output.createUserPressed),
@@ -201,4 +201,9 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
         self.facebookButton.setIsLoading(false)
         self.appleButtton.setIsLoading(false)
     }
+
+
 }
+
+
+
