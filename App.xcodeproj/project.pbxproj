@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -183,6 +183,7 @@
 		B3188FCC018ADC7019E64418 /* TransactionDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB50982A73378C73BCAF6CCD /* TransactionDetailRouter.swift */; };
 		B32F57D789161D72CB3E234E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A2B4A1CD2505599C2BCE30 /* HelpViewController.swift */; };
 		B59069C2C820720E0D50A60C /* TransactionDetailRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949D5103AF2029415EF7962A /* TransactionDetailRouterInput.swift */; };
+		B6818E642404299300A85E29 /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6818E632404299300A85E29 /* TestingViewController.swift */; };
 		B698C80FD14B17901846FE1E /* CarEditFormRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6F291A57AC31444D2D6C06 /* CarEditFormRouterInput.swift */; };
 		BBB1C4C1DEB648C3D0FBE331 /* EditProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78E57437E2566B5CA80D44 /* EditProfileInteractor.swift */; };
 		BC5EF9E8A81A2F17989EAB95 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2196644D0B36CEB0F44F79 /* SettingsRouter.swift */; };
@@ -272,7 +273,7 @@
 		3B1E84E6238EBD08008E3437 /* Notch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notch.swift; sourceTree = "<group>"; };
 		3B1E84E8238ECCDD008E3437 /* RunOnDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunOnDevice.swift; sourceTree = "<group>"; };
 		3B21D0DA23C0D403005B4552 /* DateFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatting.swift; sourceTree = "<group>"; };
-		3B2C285F2382DBDF00983ECE /* AppTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B2C285F2382DBDF00983ECE /* Send Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Send Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B2C28622382DBDF00983ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B2C28642382DBDF00983ECE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3B2C286B2382DBE100983ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -401,6 +402,7 @@
 		B19AB1C6EBEDD1E0F694CBF6 /* LoginSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginSelectionViewController.swift; sourceTree = "<group>"; };
 		B4564FCC1D358D913F194186 /* CreateUserViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CreateUserViewInput.swift; sourceTree = "<group>"; };
 		B65D0F0C98070DB5E496A785 /* HelpInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HelpInteractorInput.swift; sourceTree = "<group>"; };
+		B6818E632404299300A85E29 /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
 		B8BFD04CABCB0919F5681219 /* NotificationsModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NotificationsModuleInput.swift; sourceTree = "<group>"; };
 		B94F815FEE6FECB914F316E0 /* TermsAndConditionsViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TermsAndConditionsViewOutput.swift; sourceTree = "<group>"; };
 		B985738D5F3C914C29DACE1A /* CarEditFormPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarEditFormPresenter.swift; sourceTree = "<group>"; };
@@ -679,7 +681,7 @@
 		3B2C28602382DBDF00983ECE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B2C285F2382DBDF00983ECE /* AppTemplate.app */,
+				3B2C285F2382DBDF00983ECE /* Send Code.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1138,6 +1140,7 @@
 				35C00F39FC2CB7F2133C1407 /* LoginSelectionViewInput.swift */,
 				9BCE397FBACD32FF9CE9D410 /* LoginSelectionViewOutput.swift */,
 				B19AB1C6EBEDD1E0F694CBF6 /* LoginSelectionViewController.swift */,
+				B6818E632404299300A85E29 /* TestingViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1513,7 +1516,7 @@
 			);
 			name = App;
 			productName = HuntPlan;
-			productReference = 3B2C285F2382DBDF00983ECE /* AppTemplate.app */;
+			productReference = 3B2C285F2382DBDF00983ECE /* Send Code.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1573,7 +1576,6 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
 			);
 			outputFileListPaths = (
 			);
@@ -1581,7 +1583,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\"\n";
+			shellScript = "
+";
+			showEnvVarsInLog = 0;
 		};
 		957E6673B308EB7E01BA5304 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1740,6 +1744,7 @@
 				BC5EF9E8A81A2F17989EAB95 /* SettingsRouter.swift in Sources */,
 				3B390CE423C2839500F34DD9 /* ServicesRepository.swift in Sources */,
 				E1E3F78CBF0B0D80A2EED32F /* EditProfileViewInput.swift in Sources */,
+				B6818E642404299300A85E29 /* TestingViewController.swift in Sources */,
 				0F085D3A73D9C72E95562209 /* EditProfileViewOutput.swift in Sources */,
 				684A2658BF2E6B1CF76CC1BA /* EditProfileViewController.swift in Sources */,
 				70A740C7ABE722191E03F53E /* EditProfileModuleInput.swift in Sources */,
@@ -1968,6 +1973,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ADY83YFFM5;
 				INFOPLIST_FILE = App/Info.plist;
@@ -1978,8 +1984,9 @@
 				);
 				MARKETING_VERSION = 1.0.0;
 				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.apptemplate;
-				PRODUCT_NAME = AppTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.sendcodeios;
+				PRODUCT_NAME = "Send Code";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1991,6 +1998,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = App/App.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ADY83YFFM5;
 				INFOPLIST_FILE = App/Info.plist;
@@ -2000,8 +2008,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.apptemplate;
-				PRODUCT_NAME = AppTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = io.houseofcode.sendcodeios;
+				PRODUCT_NAME = "Send Code";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

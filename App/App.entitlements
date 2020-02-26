@@ -12,7 +12,7 @@
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)io.houseofcode.carpay</string>
+		<string>$(AppIdentifierPrefix)io.houseofcode.sendcodeios</string>
 	</array>
 </dict>
 </plist>
