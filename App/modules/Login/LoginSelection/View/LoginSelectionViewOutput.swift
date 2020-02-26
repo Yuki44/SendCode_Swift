@@ -21,5 +21,6 @@ import UIKit
     @objc func createUserPressed()
     
     func signInWithFacebookPressed(from viewController: UIViewController)
+    func signInWithGooglePressed(from viewController: UIViewController)
     func signInWithApplePressed(from viewController: UIViewController)
 }

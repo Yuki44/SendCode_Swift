@@ -18,17 +18,17 @@ extension UITextView {
         terms.showsHorizontalScrollIndicator = false
         terms.textAlignment = .center
         terms.backgroundColor = .clear
-        terms.tintColor = .white
+       // terms.tintColor = .white
         
         let normal = Style {
-            $0.color = UIColor.white
+            $0.color = UIColor.lightGray
             $0.alignment = .center
             $0.minimumLineHeight = 18.0
         }
         
         let link = Style {
-            $0.color = UIColor.white
-            $0.underline = (.single, UIColor.white)
+            $0.color = UIColor.systemBlue
+            $0.underline = (.single, UIColor.systemBlue)
             $0.linkURL = URLRepresentable.tagAttribute("href")
         }
         

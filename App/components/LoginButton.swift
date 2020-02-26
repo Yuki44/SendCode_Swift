@@ -17,26 +17,26 @@ class LoginButton: UIControl {
     var imageView: UIImageView!
     var label: UILabel!
     
-    @IBInspectable var cornerRadius: CGFloat = 0 {
+     var cornerRadius: CGFloat = 0 {
         didSet {
             self.layer.cornerRadius = cornerRadius
             self.layer.masksToBounds = cornerRadius > 0
         }
     }
     
-    @IBInspectable var image: UIImage? = nil {
+     var image: UIImage? = nil {
         didSet {
             self.imageView.image = self.image
         }
     }
     
-    @IBInspectable var text: String = "" {
+     var text: String = "" {
         didSet {
             self.label.text = self.text
         }
     }
     
-    @IBInspectable var textColor: UIColor = .white {
+     var textColor: UIColor = .white {
         didSet {
             self.label.textColor = self.textColor
             self.imageView.tintColor = self.textColor
@@ -56,13 +56,16 @@ class LoginButton: UIControl {
     func setupView() {
         self.imageView = UIImageView(image: nil)
         self.imageView.tintColor = self.textColor
+        self.imageView.clipsToBounds = true
+        self.imageView.contentMode = .scaleAspectFit
         self.addSubview(self.imageView)
         
-        self.imageView.snp.makeConstraints { (make) in
-            make.left.equalToSuperview().offset(15)
-            make.centerY.equalToSuperview()
-            
-            //make.width.height.equalTo(20)
+      self.imageView.snp.makeConstraints { make in
+        make.leading.equalTo(self.snp.leading).offset(15)
+        make.top.equalToSuperview().offset(15)
+        make.bottom.equalToSuperview().inset(15)
+        make.width.equalTo(30)
+        //make.centerY.equalToSuperview()
         }
         
         //self.imageV
@@ -70,10 +73,10 @@ class LoginButton: UIControl {
         self.label = UILabel()
         self.addSubview(self.label)
         
-        self.label.snp.makeConstraints { (make) in
-            make.left.equalTo(43)
-            make.right.equalToSuperview().offset(10)
-            make.centerY.equalToSuperview()
+       self.label.snp.makeConstraints { (make) in
+          make.leading.equalTo(self.imageView.snp.trailing).offset(20)
+          make.trailing.equalToSuperview().inset(10)
+          make.centerY.equalToSuperview()
         }
         
         self.activityIndicator = UIActivityIndicatorView(style: .white)
@@ -106,26 +109,21 @@ extension LoginButton {
         button.backgroundColor = "#4267B2".color()
         button.textColor = UIColor.white
         button.image = UIImage(named: "facebook")
+
         return button
     }
     
-    static func email() -> LoginButton {
+    static func google() -> LoginButton {
         let button = LoginButton()
-        button.text = "Login with E-mail".localize()
+        button.text = "Login with Google".localize()
         button.cornerRadius = 10.0
-        button.backgroundColor = "#EAAA47".color()
-        button.textColor = UIColor.white
-        button.image = UIImage(named: "email")
+        button.backgroundColor = "#FFFFFF".color()
+        button.textColor = UIColor.black
+        let image = UIImage(named: "google")
+        button.image = image
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.lightGray.cgColor
         return button
     }
     
-    static func apple() -> LoginButton {
-        let button = LoginButton()
-        button.text = "Login with Apple".localize()
-        button.cornerRadius = 10.0
-        button.image = UIImage(named: "apple")
-        button.backgroundColor = .white
-        button.textColor = .black
-        return button
-    }
 }
