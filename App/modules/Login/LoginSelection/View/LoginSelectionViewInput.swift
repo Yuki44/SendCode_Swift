@@ -16,5 +16,4 @@ protocol LoginSelectionViewInput: class where Self: UIViewController {
 
     func setupInitialState()
     func displayError(_ error: Error)
-    func loginCancelled()
 }

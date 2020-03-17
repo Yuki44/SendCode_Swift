@@ -16,6 +16,12 @@ fileprivate enum AnalyticEvents: String {
 }
 
 class LoginSelectionPresenter: LoginSelectionModuleInput, LoginSelectionViewOutput, LoginSelectionInteractorOutput {
+   
+    
+    func signInWithGooglePressed(from viewController: UIViewController) {
+        //todo
+    }
+    
     
     weak var view: LoginSelectionViewInput!
     var interactor: LoginSelectionInteractorInput!
@@ -30,7 +36,7 @@ class LoginSelectionPresenter: LoginSelectionModuleInput, LoginSelectionViewOutp
     @objc func signInWithEmailPressed() {
         self.router.navigateToEmailSignIn(from: self.view)
     }
-    
+//
     func signInWithFacebookPressed(from viewController: UIViewController) {
         self.analytics.logEvent(event: AnalyticEvents.facebook.rawValue)
         self.interactor.inititateFacebookLogin(from: viewController)
@@ -50,8 +56,5 @@ class LoginSelectionPresenter: LoginSelectionModuleInput, LoginSelectionViewOutp
         self.view.displayError(error)
     }
     
-    func loginCancelled() {
-        self.analytics.logEvent(event: AnalyticEvents.loginCancelled.rawValue)
-        self.view.loginCancelled()
-    }
+  
 }

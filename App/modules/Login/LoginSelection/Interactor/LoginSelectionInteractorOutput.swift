@@ -10,6 +10,6 @@ import Foundation
 
 protocol LoginSelectionInteractorOutput: class {
 
-    func loginCancelled()
-    func loginFailedWithError(_ error: Error)
+   
+   
 }

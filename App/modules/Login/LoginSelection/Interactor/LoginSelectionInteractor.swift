@@ -33,17 +33,17 @@ class LoginSelectionInteractor: NSObject, LoginSelectionInteractorInput {
             
             if result.isCancelled {
                 log.warning("[facebook] cancelled")
-                self?.output.loginCancelled()
+//                self?.output.loginCancelled()
             } else if let error = error {
                 log.warning("[facebook] error: \(error)")
-                self?.output.loginFailedWithError(error)
+//                self?.output.loginFailedWithError(error)
             } else {
                 // Login was ok
                 if let token = result.token {
                     self?.validateFacebookToken(token.tokenString)
                 } else {
                     log.warning("[facebook] error: \(LoginError.tokenNotFound)")
-                    self?.output.loginFailedWithError(LoginError.tokenNotFound)
+//                    self?.output.loginFailedWithError(LoginError.tokenNotFound)
                 }
             }
         }
@@ -61,7 +61,7 @@ class LoginSelectionInteractor: NSObject, LoginSelectionInteractorInput {
             authorizationController.presentationContextProvider = self
             authorizationController.performRequests()
         } else {
-            self.output.loginFailedWithError(LoginError.onlyOnIOS13)
+//            self.output.loginFailedWithError(LoginError.onlyOnIOS13)
         }
     }
     
@@ -69,7 +69,7 @@ class LoginSelectionInteractor: NSObject, LoginSelectionInteractorInput {
         self.sessionManager?
             .login(facebookToken: token)
             .subscribe(onError: { [weak self] (error) in
-                self?.output.loginFailedWithError(error)
+//                self?.output.loginFailedWithError(error)
             }).disposed(by: self.disposeBag)
     }
 }
@@ -103,16 +103,16 @@ extension LoginSelectionInteractor: ASAuthorizationControllerDelegate {
                            jwt: jwt,
                            fullName: name)
                     .subscribe(onError: { [weak self] (error) in
-                        self?.output.loginFailedWithError(error)
+//                        self?.output.loginFailedWithError(error)
                     }).disposed(by: self.disposeBag)
             } else {
-                self.output?.loginFailedWithError(LoginError.tokenNotFound)
+//                self.output?.loginFailedWithError(LoginError.tokenNotFound)
             }
         }
     }
     
     func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
-        self.output.loginFailedWithError(error)
+//        self.output.loginFailedWithError(error)
     }
 }
 
