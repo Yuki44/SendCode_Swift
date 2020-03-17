@@ -12,13 +12,16 @@ target 'App' do
   pod "RxGesture"
   pod 'RealmSwift'
 
+  pod 'FirebaseUI'
+
   pod 'Fabric', '~> 1.10.2'
   pod 'Crashlytics', '~> 3.14.0'
   pod 'Firebase/Analytics'
   pod 'Firebase/Messaging'
+pod 'Firebase/Firestore'
 
   pod 'SwiftyBeaver' # Logging framework
-  pod 'SwiftRichString'
+  pod 'SwiftRichString', '~> 3.0.3'
 
   pod 'FBSDKLoginKit'
 
@@ -29,3 +32,16 @@ target 'App' do
   pod 'MTSlideToOpen'
 
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
