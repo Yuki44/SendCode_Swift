@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseUI
 import RealmSwift
 import SwiftyBeaver
 import FBSDKCoreKit
@@ -89,7 +90,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-        return ApplicationDelegate.shared.application(app, open: url, options: options)
+        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
+        return self.handleOpenUrl(url, sourceApplication: sourceApplication)
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
@@ -105,6 +107,14 @@ extension AppDelegate: MessagingDelegate {
     
     func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
         self.pushCordinator.notifyAboutNewMessage(type: .pendingPayment)
+    }
+    
+    func handleOpenUrl(_ url: URL, sourceApplication: String?) -> Bool {
+      if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+        return true
+      }
+      // other URL handling goes here.
+      return false
     }
 }
 
