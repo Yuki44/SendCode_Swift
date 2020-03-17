@@ -145,3 +145,5 @@ app/.idea/
 .idea/
 
 .DS_Store
+
+App/GoogleService-Info.plist
