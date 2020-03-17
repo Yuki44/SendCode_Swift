@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wS1-xt-nGd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wS1-xt-nGd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,21 +11,17 @@
         <!--Splash View Controller-->
         <scene sceneID="MP5-me-kAh">
             <objects>
-                <viewController id="wS1-xt-nGd" customClass="SplashViewController" customModule="CarPay" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wS1-xt-nGd" customClass="SplashViewController" customModule="Send_Code" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jd4-cy-5xP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="irm-Da-wdy">
-                                <rect key="frame" x="197" y="438" width="20" height="20"/>
-                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="any-mH-8n0">
+                                <rect key="frame" x="87" y="363" width="240" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="irm-Da-wdy" firstAttribute="centerX" secondItem="Jd4-cy-5xP" secondAttribute="centerX" id="YTa-Ch-RLB"/>
-                            <constraint firstItem="irm-Da-wdy" firstAttribute="centerY" secondItem="Jd4-cy-5xP" secondAttribute="centerY" id="w7T-bY-7F2"/>
-                        </constraints>
+                        <color key="backgroundColor" red="0.13333114979999999" green="0.13333219290000001" blue="0.13333493469999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="JEp-GA-nu9"/>
                     </view>
                 </viewController>
@@ -34,4 +30,7 @@
             <point key="canvasLocation" x="0.0" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="250" height="250"/>
+    </resources>
 </document>
