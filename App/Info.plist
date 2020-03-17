@@ -19,18 +19,32 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Facebook</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb541880059701345</string>
+				<string>fb2545026675575747</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Google</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.363145628390-51mmr9n9or79fjv823bshiukmi5lgd4g</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>FacebookAppID</key>
-	<string>541880059701345</string>
+	<string>2545026675575747</string>
 	<key>FacebookDisplayName</key>
-	<string>CarPay</string>
+	<string>SendCode</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>fbapi</string>
