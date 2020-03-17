@@ -8,192 +8,152 @@
 
 import UIKit
 import RxSwift
+import FirebaseUI
 import RxGesture
 import SnapKit
 import SwiftRichString
 
 
-class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
+class LoginSelectionViewController: UIViewController, LoginSelectionViewInput, FUIAuthDelegate {
     
+    // MARK: Variables
     var output: LoginSelectionViewOutput?
     var disposeBag = DisposeBag()
-    var facebookButton: LoginButton?
-    var googleButton: LoginButton?
+    var signInButton: LoginButton?
+    var logoView: UIImageView!
+    
+    // MARK: Constants
+    let headerLabel = UILabel()
+    let authUI = FUIAuth.defaultAuthUI()
+    let terms = UITextView.temrs()
+    let loginButton = LoginButton.login()
+    let errorLabel = UILabel()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
+    // necessary to deinit the notification center
+         deinit {
+             NotificationCenter.default.removeObserver(self)
+         }
+    
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         output?.viewIsReady()
-        
-        // Background
-        //        let background = UIImageView(image: UIImage(named: "login_bg"))
-        //         background.contentMode = .scaleAspectFill
-        //         self.view.addSubview(background)
-        //         background.snp.makeConstraints { (make) in
-        //         make.edges.equalToSuperview()
-        //         }
-        
+        self.authUI?.delegate = self
+        configureProviders()
         self.view.backgroundColor = .white
-        
-        var offset = 86.0
-        UIDevice.onIphone5 {
-            offset = 26.0
-        }
-        
-        UIDevice.onIphone8 {
-            offset = 46.0
-        }
-        
+        setSubviews()
+        setWelcomeHeader()
+        setTerms()
+        setLogin()
+        NotificationCenter.default.addObserver(self, selector: #selector(cleanView), name: UIApplication.didEnterBackgroundNotification, object: nil)
+    }
+    
+    func setSubviews() {
+        self.view.addSubview(self.headerLabel)
+        self.view.addSubview(self.terms)
+        self.view.addSubview(self.loginButton)
+        self.view.addSubview(self.errorLabel)
+    }
+    
+    /// Configure the welcome message and the logo image
+    func setWelcomeHeader() {
         // Header
-        let headerLabel = UILabel()
-        self.view.addSubview(headerLabel)
-        headerLabel.snp.makeConstraints { (make) in
-            //make.leading.equalTo(self.view.snp.leading).offset(27)
+        self.headerLabel.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
-            //make.leading.equalTo().offset(27)
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(offset)
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top).offset(35)
         }
-        //headerLabel.leftAnchor.constraint(equalTo: self.view.leftAnchor, constant: 27)
+        self.headerLabel.font = UIFont.boldSystemFont(ofSize: 25)
+        self.headerLabel.textColor = UIColor.darkGray
+        self.headerLabel.text = "Welcome to Send Code!".localize()
         
-        headerLabel.font = UIFont.boldSystemFont(ofSize: 25)
-        headerLabel.textColor = UIColor.darkGray
-        headerLabel.text = "Welcome to Send Code!".localize()
-        
+        // Logo
+        self.logoView = UIImageView(image: UIImage(named: "logo"))
+        self.view.addSubview(self.logoView)
+        self.logoView.snp.makeConstraints { (make) in
+            make.top.equalTo(self.headerLabel.snp.bottom).offset(45)
+            make.height.equalTo(180)
+            make.width.equalTo(180)
+            make.centerX.equalToSuperview()
+        }
+    }
+    
+    /// Configure the constraints for the terms of usage of the app
+    func setTerms() {
         // Terms
-        let terms = UITextView.temrs()
-        self.view.addSubview(terms)
-        terms.snp.makeConstraints { (make) in
-            // make.top.equalTo(logoView.snp.bottom).offset(21)
+        self.terms.snp.makeConstraints { (make) in
             make.bottomMargin.equalToSuperview().offset(-28)
             make.width.equalTo(258)
             make.height.equalTo(64)
             make.centerX.equalToSuperview()
         }
-        
-        // Facebook
-        let signWithFacebookButton = LoginButton.facebook()
-        self.view.addSubview(signWithFacebookButton)
-        signWithFacebookButton.snp.makeConstraints { (make) in
-            make.bottom.equalTo(terms.snp.top).offset(-25)
-            make.left.equalTo(15)
-            make.right.equalTo(-15)
+    }
+    
+    func setLogin() {
+        // loginButton
+        self.signInButton = self.loginButton
+        self.loginButton.addTarget(self, action: #selector(self.startLogin), for: .touchUpInside)
+        self.loginButton.snp.makeConstraints { (make) in
+            make.bottom.equalTo(self.terms.snp.top).offset(-65)
+            make.width.equalToSuperview().offset(-35)
             make.height.equalTo(60)
-        }
-        
-        signWithFacebookButton
-            .rx
-            .tapGesture()
-            .when(.recognized)
-            .subscribe(onNext: { [weak self] (gesture) in
-                if let me = self {
-                    
-                    if let facebookButton = me.facebookButton {
-                        facebookButton.setIsLoading(true)
-                    }
-                    
-                    if let output = me.output {
-                        output.signInWithFacebookPressed(from: me)
-                    }
-                    
-                }
-            }).disposed(by: self.disposeBag)
-        
-        self.facebookButton = signWithFacebookButton
-        
-        // Google
-        let signWithGoogleButton = LoginButton.google()
-        self.view.addSubview(signWithGoogleButton)
-        signWithGoogleButton.snp.makeConstraints { (make) in
-            make.top.equalTo(signWithFacebookButton.snp.top).offset(-75)
-            make.left.equalTo(15)
-            make.right.equalTo(-15)
-            make.height.equalTo(60)
-        }
-        
-        signWithGoogleButton
-            .rx
-            .tapGesture()
-            .when(.recognized)
-            .subscribe(onNext: { [weak self] (gesture) in
-                if let me = self {
-                    if let googleButton = me.googleButton {
-                        googleButton.setIsLoading(true)
-                    }
-                    if let output = me.output {
-                        output.signInWithGooglePressed(from: me)
-                    }
-                }
-            }).disposed(by: self.disposeBag)
-        
-        self.googleButton = signWithGoogleButton
-        // "Or" label
-        //        var orLabelOffset = 57.0
-        //        UIDevice.onIphone5 {
-        //            orLabelOffset = 24.0
-        //        }
-        //
-        //        let orLabel = UILabel()
-        //        self.view.addSubview(orLabel)
-        //        orLabel.snp.makeConstraints { (make) in
-        //            if let facebookButton = self.facebookButton {
-        //                make.top.equalTo(facebookButton.snp.bottom).offset(orLabelOffset)
-        //            }
-        //
-        
-        //            make.centerX.equalToSuperview()
-        
-        //        }
-        //
-        //        orLabel.text = "or".localize()
-        //        orLabel.textColor = .black
-        //
-        // Create profile
-        //        var createProfileButtonOffset = 38.0
-        //        UIDevice.onIphone5 {
-        //            createProfileButtonOffset = 18.0
-        //        }
-        //        let createProfileButton = UIButton()
-        //        self.view.addSubview(createProfileButton)
-        //        createProfileButton.snp.makeConstraints { (make) in
-        //            make.top.equalTo(orLabel.snp.bottom).offset(createProfileButtonOffset)
-        //            make.centerX.equalToSuperview()
-        //        }
-        //
-        //        let style = Style {
-        //            $0.font = UIFont.boldSystemFont(ofSize: 20.0)
-        //            $0.underline = (.single, "#EAAA47".color())
-        //            $0.color = "#EAAA47".color()
-        //        }
-        //
-        //        UIDevice.onIphone5 {
-        //            style.font = UIFont.boldSystemFont(ofSize: 15.0)
-        //        }
-        //
-        //        createProfileButton.setAttributedTitle("Create an account".localize().set(style: style), for: .normal)
-        //
-        //        if let output = self.output {
-        //            createProfileButton.addTarget(output,
-        //                                          action: #selector(output.createUserPressed),
-        //                                          for: .touchUpInside)
-        //        }
-        
-        
-        // Logo
-        let logoView = UIImageView(image: UIImage(named: "logo"))
-        self.view.addSubview(logoView)
-        logoView.snp.makeConstraints { (make) in
-            
-            make.top.equalTo(headerLabel.snp.bottom).offset(45)
-            make.height.equalTo(180)
-            make.width.equalTo(180)
             make.centerX.equalToSuperview()
         }
         
-        
+        //errorLabel
+        self.errorLabel.text = ""
+        self.errorLabel.font = UIFont.boldSystemFont(ofSize: 15)
+        self.errorLabel.adjustsFontForContentSizeCategory = true
+        self.errorLabel.textColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        self.errorLabel.numberOfLines = 0
+        self.errorLabel.textAlignment = .center
+        self.errorLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(self.loginButton.snp.bottom).offset(10)
+            make.width.equalToSuperview().offset(-25)
+        }
+    }
+    
+    func configureProviders() {
+        let providers: [FUIAuthProvider] = [
+            FUIGoogleAuth(),
+            FUIFacebookAuth()
+        ]
+        self.authUI?.providers = providers
+    }
+    
+    @objc func startLogin() {
+        self.errorLabel.text = ""
+        let authViewController = (self.authUI?.authViewController())!
+        authViewController.modalPresentationStyle = .popover
+        self.present(authViewController, animated: true, completion: nil)
+    }
+    
+    /// Handling of errors
+    /// - Parameters:
+    ///   - authUI: Firebase auth
+    ///   - user: In case it did sign in
+    ///   - error: Any error
+    func authUI(_ authUI: FUIAuth, didSignInWith user: User?, error: Error?) {
+        if((error) != nil){
+        self.errorLabel.text = String(error?.localizedDescription ?? "Something went wrong").localize()
+        }
+        if((user) != nil) {
+            print(user as Any)
+        }
+    }
+    
+    /// Handler for the result of the Google and Facebook sign-up flows
+    func application(_ app: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        let sourceApplication = options[UIApplication.OpenURLOptionsKey.sourceApplication] as! String?
+        if FUIAuth.defaultAuthUI()?.handleOpen(url, sourceApplication: sourceApplication) ?? false {
+            return true
+        }
+        // other URL handling goes here.
+        return false
     }
     
     // MARK: LoginSelectionViewInput
@@ -201,46 +161,20 @@ class LoginSelectionViewController: UIViewController, LoginSelectionViewInput {
         
     }
     
+    /// Not being used at the moment
     func displayError(_ error: Error) {
         self.showError(error: error)
             .subscribe(onNext: { [weak self] _ in
-                self?.facebookButton?.setIsLoading(false)
+                guard `self` != nil else {return}
+                //                guard let self = `self` else {return}
+                //                self.facebookButton?.setIsLoading(false)
             }).disposed(by: self.disposeBag)
     }
     
-    func loginCancelled() {
-        self.facebookButton?.setIsLoading(false)
+    /// called when the view minimizes so the error is not shown all the time
+   @objc func cleanView() {
+        self.errorLabel.text = ""
     }
     
-    
+
 }
-
-
-
-#if DEBUG
-import SwiftUI
-
-@available(iOS 13, *)
-struct VCPreview: PreviewProvider {
-    
-    static var previews: some SwiftUI.View {
-        VCContainerView().edgesIgnoringSafeArea(.all)
-    }
-    
-    struct VCContainerView: UIViewControllerRepresentable {
-        func makeUIViewController(context: UIViewControllerRepresentableContext<VCPreview.VCContainerView>) -> UIViewController {
-            let viewController = LoginSelectionViewController()
-            
-            
-            return viewController
-        }
-        
-        func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<VCPreview.VCContainerView>) {}
-        
-        typealias UIViewControllerType = UIViewController
-    }
-    
-}
-#endif
-
-

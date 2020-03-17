@@ -74,9 +74,8 @@ class LoginButton: UIControl {
         self.addSubview(self.label)
         
        self.label.snp.makeConstraints { (make) in
-          make.leading.equalTo(self.imageView.snp.trailing).offset(20)
-          make.trailing.equalToSuperview().inset(10)
           make.centerY.equalToSuperview()
+         make.centerX.equalToSuperview()
         }
         
         self.activityIndicator = UIActivityIndicatorView(style: .white)
@@ -102,27 +101,26 @@ class LoginButton: UIControl {
 }
 
 extension LoginButton {
-    static func facebook() -> LoginButton {
+    static func login() -> LoginButton {
         let button = LoginButton()
-        button.text = "Login with Facebook".localize()
+        button.text = "Login".localize()
         button.cornerRadius = 10.0
-        button.backgroundColor = "#4267B2".color()
+        button.backgroundColor = UIColor(red:0.87, green:0.53, blue:0.13, alpha:1)
         button.textColor = UIColor.white
-        button.image = UIImage(named: "facebook")
-
+        button.label.textAlignment = .center
+      button.label.font = UIFont.boldSystemFont(ofSize: 20)
+        button.label.adjustsFontForContentSizeCategory = true
         return button
     }
     
-    static func google() -> LoginButton {
+    static func signup() -> LoginButton {
         let button = LoginButton()
-        button.text = "Login with Google".localize()
+        button.text = "Opret ny virksomhedsprofil".localize()
         button.cornerRadius = 10.0
-        button.backgroundColor = "#FFFFFF".color()
-        button.textColor = UIColor.black
-        let image = UIImage(named: "google")
-        button.image = image
-        button.layer.borderWidth = 1
-        button.layer.borderColor = UIColor.lightGray.cgColor
+        button.backgroundColor = UIColor(red:0.27, green:0.47, blue:0.54, alpha:1)
+      button.label.font = UIFont.preferredFont(forTextStyle: .body)
+               button.label.adjustsFontForContentSizeCategory = true
+        button.textColor = UIColor.white
         return button
     }
     
